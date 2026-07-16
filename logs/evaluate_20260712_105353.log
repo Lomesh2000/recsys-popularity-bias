@@ -1,0 +1,9 @@
+2026-07-12 10:53:53 - evaluate - INFO - ============================================================
+2026-07-12 10:53:53 - evaluate - INFO - Model Evaluation
+2026-07-12 10:53:53 - evaluate - INFO - ============================================================
+2026-07-12 10:53:53 - evaluate - INFO - Checkpoint: checkpoints/ile_std/best_model.pt
+2026-07-12 10:53:53 - evaluate - INFO - Dataset: movielens-1m
+2026-07-12 10:53:53 - evaluate - INFO - Evaluation top_k: 10
+2026-07-12 10:53:53 - evaluate - INFO - Dataset loaded: 6040 users, 3706 items
+2026-07-12 10:53:53 - evaluate - INFO - Model loaded: ILEBPRModel
+2026-07-12 10:54:03 - evaluate - INFO - Evaluation complete

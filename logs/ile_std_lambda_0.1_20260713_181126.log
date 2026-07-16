@@ -1,0 +1,33 @@
+2026-07-13 18:11:26 - ile_std_lambda_0.1 - INFO - No checkpoint found. Training from scratch for λ=0.1...
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Starting training for 200 epochs
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Model: ILEBPRModel
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Dataset: movielens-1m
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Users: 6040, Items: 3706
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Train interactions: 797,758
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Use ILE: True
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Distance: std, λ: 0.1
+2026-07-13 18:11:28 - ile_std_lambda_0.1 - INFO - Batches per epoch: 780
+2026-07-13 18:11:47 - ile_std_lambda_0.1 - INFO - Epoch   1/200 | Time:  8.17s | Loss: 0.6930 | BPR: 0.6930 | ILE: 0.0000 | Dist: 0.0002 | L_H: 0.6930 L_M: 0.6931 L_T: 0.6932 | nDCG: 0.1001 | UPD: 0.2650 | AD: 0.9436 | EE: 0.2321
+2026-07-13 18:11:47 - ile_std_lambda_0.1 - INFO - Checkpoint saved: ./checkpoints/ile_std_lambda_0.1/best_model.pt
+2026-07-13 18:11:47 - ile_std_lambda_0.1 - INFO -   New best nDCG: 0.1001 (saved as best_model.pt)
+2026-07-13 18:11:55 - ile_std_lambda_0.1 - INFO - Epoch   2/200 | Time:  7.87s | Loss: 0.6766 | BPR: 0.6750 | ILE: 0.0015 | L_H: 0.6671 L_M: 0.6898 L_T: 0.6962
+2026-07-13 18:12:02 - ile_std_lambda_0.1 - INFO - Epoch   3/200 | Time:  7.84s | Loss: 0.5655 | BPR: 0.5529 | ILE: 0.0126 | L_H: 0.4907 L_M: 0.6684 L_T: 0.7293
+2026-07-13 18:12:10 - ile_std_lambda_0.1 - INFO - Epoch   4/200 | Time:  7.61s | Loss: 0.4681 | BPR: 0.4445 | ILE: 0.0236 | L_H: 0.3314 L_M: 0.6538 L_T: 0.7806
+2026-07-13 18:12:18 - ile_std_lambda_0.1 - INFO - Epoch   5/200 | Time:  7.82s | Loss: 0.4296 | BPR: 0.3997 | ILE: 0.0299 | L_H: 0.2628 L_M: 0.6526 L_T: 0.8346
+2026-07-13 18:12:26 - ile_std_lambda_0.1 - INFO - Epoch   6/200 | Time:  7.82s | Loss: 0.4123 | BPR: 0.3796 | ILE: 0.0327 | L_H: 0.2320 L_M: 0.6524 L_T: 0.8573
+2026-07-13 18:12:33 - ile_std_lambda_0.1 - INFO - Epoch   7/200 | Time:  7.62s | Loss: 0.4038 | BPR: 0.3684 | ILE: 0.0354 | L_H: 0.2155 L_M: 0.6504 L_T: 0.8938
+2026-07-13 18:12:41 - ile_std_lambda_0.1 - INFO - Epoch   8/200 | Time:  7.85s | Loss: 0.3953 | BPR: 0.3599 | ILE: 0.0354 | L_H: 0.2051 L_M: 0.6456 L_T: 0.8807
+2026-07-13 18:12:49 - ile_std_lambda_0.1 - INFO - Epoch   9/200 | Time:  7.79s | Loss: 0.3917 | BPR: 0.3551 | ILE: 0.0367 | L_H: 0.1988 L_M: 0.6429 L_T: 0.9018
+2026-07-13 18:13:07 - ile_std_lambda_0.1 - INFO - Epoch  10/200 | Time:  7.83s | Loss: 0.3871 | BPR: 0.3498 | ILE: 0.0373 | Dist: 0.3733 | L_H: 0.1933 L_M: 0.6378 L_T: 0.9098 | nDCG: 0.2114 | UPD: 0.3256 | AD: 0.0375 | EE: 0.0043
+2026-07-13 18:13:07 - ile_std_lambda_0.1 - INFO - Checkpoint saved: ./checkpoints/ile_std_lambda_0.1/checkpoint_epoch_10.pt
+2026-07-13 18:13:07 - ile_std_lambda_0.1 - INFO - Checkpoint saved: ./checkpoints/ile_std_lambda_0.1/best_model.pt
+2026-07-13 18:13:07 - ile_std_lambda_0.1 - INFO -   New best nDCG: 0.2114 (saved as best_model.pt)
+2026-07-13 18:13:15 - ile_std_lambda_0.1 - INFO - Epoch  11/200 | Time:  7.61s | Loss: 0.3826 | BPR: 0.3450 | ILE: 0.0376 | L_H: 0.1902 L_M: 0.6296 L_T: 0.9137
+2026-07-13 18:13:23 - ile_std_lambda_0.1 - INFO - Epoch  12/200 | Time:  7.91s | Loss: 0.3783 | BPR: 0.3406 | ILE: 0.0378 | L_H: 0.1869 L_M: 0.6232 L_T: 0.9127
+2026-07-13 18:13:31 - ile_std_lambda_0.1 - INFO - Epoch  13/200 | Time:  7.94s | Loss: 0.3748 | BPR: 0.3370 | ILE: 0.0378 | L_H: 0.1846 L_M: 0.6170 L_T: 0.9120
+2026-07-13 18:13:38 - ile_std_lambda_0.1 - INFO - Epoch  14/200 | Time:  7.58s | Loss: 0.3699 | BPR: 0.3324 | ILE: 0.0375 | L_H: 0.1817 L_M: 0.6092 L_T: 0.9039
+2026-07-13 18:13:46 - ile_std_lambda_0.1 - INFO - Epoch  15/200 | Time:  7.86s | Loss: 0.3674 | BPR: 0.3297 | ILE: 0.0377 | L_H: 0.1799 L_M: 0.6046 L_T: 0.9064
+2026-07-13 18:13:54 - ile_std_lambda_0.1 - INFO - Epoch  16/200 | Time:  7.86s | Loss: 0.3637 | BPR: 0.3262 | ILE: 0.0375 | L_H: 0.1784 L_M: 0.5976 L_T: 0.8994
+2026-07-13 18:14:02 - ile_std_lambda_0.1 - INFO - Epoch  17/200 | Time:  7.88s | Loss: 0.3591 | BPR: 0.3219 | ILE: 0.0372 | L_H: 0.1766 L_M: 0.5885 L_T: 0.8920
+2026-07-13 18:14:10 - ile_std_lambda_0.1 - INFO - Epoch  18/200 | Time:  7.56s | Loss: 0.3564 | BPR: 0.3195 | ILE: 0.0369 | L_H: 0.1759 L_M: 0.5828 L_T: 0.8890
+2026-07-13 18:14:17 - ile_std_lambda_0.1 - INFO - Epoch  19/200 | Time:  7.81s | Loss: 0.3507 | BPR: 0.3144 | ILE: 0.0363 | L_H: 0.1735 L_M: 0.5730 L_T: 0.8707

@@ -1,0 +1,9 @@
+# Model-specific configurations
+
+bpr:
+  embedding_dim: 128
+  init_std: 0.01
+
+ile_bpr:
+  embedding_dim: 128
+  init_std: 0.01

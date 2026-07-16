@@ -1,0 +1,58 @@
+# Training-specific configurations
+
+movielens-1m:
+  epochs: 200
+  batch_size: 1024
+  learning_rate: 0.0001
+  optimizer: adam
+  num_negatives: 1
+
+  ile_std:
+    lambda_ile: 0.25
+    distance: std
+
+  ile_ent:
+    lambda_ile: 0.04
+    distance: ent
+
+  ile_mad:
+    lambda_ile: 0.30
+    distance: mad
+
+goodreads:
+  epochs: 175
+  batch_size: 1024
+  learning_rate: 0.0001
+  optimizer: adam
+  num_negatives: 1
+
+  ile_std:
+    lambda_ile: 0.30
+    distance: std
+
+  ile_ent:
+    lambda_ile: 0.02
+    distance: ent
+
+  ile_mad:
+    lambda_ile: 0.40
+    distance: mad
+
+google-reviews:
+  epochs: 175
+  batch_size: 1024
+  learning_rate: 0.0001
+  optimizer: adam
+  num_negatives: 1
+
+  ile_std:
+    lambda_ile: 0.25
+    distance: std
+
+  ile_ent:
+    lambda_ile: 0.03
+    distance: ent
+
+  ile_mad:
+    lambda_ile: 0.50
+    distance: mad

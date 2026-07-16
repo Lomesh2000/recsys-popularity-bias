@@ -1,0 +1,3 @@
+2026-07-13 18:16:29 - bpr_baseline - INFO - Found existing checkpoint for λ=0.0. Skipping training and loading weights.
+2026-07-13 18:16:29 - bpr_baseline - INFO - Evaluating model for λ=0.0...
+2026-07-13 18:16:40 - bpr_baseline - INFO - Run λ=0.0 Complete | nDCG: 0.3893 | UPD: 0.2478

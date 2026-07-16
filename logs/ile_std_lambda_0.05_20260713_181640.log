@@ -1,0 +1,3 @@
+2026-07-13 18:16:40 - ile_std_lambda_0.05 - INFO - Found existing checkpoint for λ=0.05. Skipping training and loading weights.
+2026-07-13 18:16:40 - ile_std_lambda_0.05 - INFO - Evaluating model for λ=0.05...
+2026-07-13 18:16:51 - ile_std_lambda_0.05 - INFO - Run λ=0.05 Complete | nDCG: 0.3825 | UPD: 0.2539

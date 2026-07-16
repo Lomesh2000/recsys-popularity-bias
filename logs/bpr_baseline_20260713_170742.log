@@ -1,0 +1,274 @@
+2026-07-13 17:07:42 - bpr_baseline - INFO - No checkpoint found. Training from scratch for λ=0.0...
+2026-07-13 17:07:45 - bpr_baseline - INFO - Starting training for 200 epochs
+2026-07-13 17:07:45 - bpr_baseline - INFO - Model: BPRModel
+2026-07-13 17:07:45 - bpr_baseline - INFO - Dataset: movielens-1m
+2026-07-13 17:07:45 - bpr_baseline - INFO - Users: 6040, Items: 3706
+2026-07-13 17:07:45 - bpr_baseline - INFO - Train interactions: 797,758
+2026-07-13 17:07:45 - bpr_baseline - INFO - Use ILE: False
+2026-07-13 17:07:45 - bpr_baseline - INFO - Batches per epoch: 780
+2026-07-13 17:08:02 - bpr_baseline - INFO - Epoch   1/200 | Time:  6.16s | Loss: 0.6929 | nDCG: 0.1289 | UPD: 0.2927 | AD: 0.8273 | EE: 0.1247
+2026-07-13 17:08:02 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:08:02 - bpr_baseline - INFO -   New best nDCG: 0.1289 (saved as best_model.pt)
+2026-07-13 17:08:08 - bpr_baseline - INFO - Epoch   2/200 | Time:  5.72s | Loss: 0.6586
+2026-07-13 17:08:13 - bpr_baseline - INFO - Epoch   3/200 | Time:  5.60s | Loss: 0.5052
+2026-07-13 17:08:19 - bpr_baseline - INFO - Epoch   4/200 | Time:  5.78s | Loss: 0.4089
+2026-07-13 17:08:25 - bpr_baseline - INFO - Epoch   5/200 | Time:  5.82s | Loss: 0.3737
+2026-07-13 17:08:30 - bpr_baseline - INFO - Epoch   6/200 | Time:  5.71s | Loss: 0.3582
+2026-07-13 17:08:36 - bpr_baseline - INFO - Epoch   7/200 | Time:  5.45s | Loss: 0.3496
+2026-07-13 17:08:42 - bpr_baseline - INFO - Epoch   8/200 | Time:  5.69s | Loss: 0.3427
+2026-07-13 17:08:47 - bpr_baseline - INFO - Epoch   9/200 | Time:  5.72s | Loss: 0.3391
+2026-07-13 17:09:04 - bpr_baseline - INFO - Epoch  10/200 | Time:  5.73s | Loss: 0.3347 | nDCG: 0.2113 | UPD: 0.3253 | AD: 0.0286 | EE: 0.0042
+2026-07-13 17:09:04 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_10.pt
+2026-07-13 17:09:04 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:09:04 - bpr_baseline - INFO -   New best nDCG: 0.2113 (saved as best_model.pt)
+2026-07-13 17:09:09 - bpr_baseline - INFO - Epoch  11/200 | Time:  5.61s | Loss: 0.3302
+2026-07-13 17:09:15 - bpr_baseline - INFO - Epoch  12/200 | Time:  5.91s | Loss: 0.3263
+2026-07-13 17:09:21 - bpr_baseline - INFO - Epoch  13/200 | Time:  5.90s | Loss: 0.3230
+2026-07-13 17:09:27 - bpr_baseline - INFO - Epoch  14/200 | Time:  5.53s | Loss: 0.3186
+2026-07-13 17:09:33 - bpr_baseline - INFO - Epoch  15/200 | Time:  5.91s | Loss: 0.3161
+2026-07-13 17:09:38 - bpr_baseline - INFO - Epoch  16/200 | Time:  5.77s | Loss: 0.3127
+2026-07-13 17:09:44 - bpr_baseline - INFO - Epoch  17/200 | Time:  5.83s | Loss: 0.3082
+2026-07-13 17:09:50 - bpr_baseline - INFO - Epoch  18/200 | Time:  5.60s | Loss: 0.3059
+2026-07-13 17:09:56 - bpr_baseline - INFO - Epoch  19/200 | Time:  5.78s | Loss: 0.3006
+2026-07-13 17:10:12 - bpr_baseline - INFO - Epoch  20/200 | Time:  5.93s | Loss: 0.2978 | nDCG: 0.2391 | UPD: 0.3253 | AD: 0.0545 | EE: 0.0055
+2026-07-13 17:10:12 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_20.pt
+2026-07-13 17:10:12 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:10:12 - bpr_baseline - INFO -   New best nDCG: 0.2391 (saved as best_model.pt)
+2026-07-13 17:10:18 - bpr_baseline - INFO - Epoch  21/200 | Time:  5.78s | Loss: 0.2942
+2026-07-13 17:10:24 - bpr_baseline - INFO - Epoch  22/200 | Time:  5.72s | Loss: 0.2903
+2026-07-13 17:10:30 - bpr_baseline - INFO - Epoch  23/200 | Time:  5.88s | Loss: 0.2883
+2026-07-13 17:10:35 - bpr_baseline - INFO - Epoch  24/200 | Time:  5.78s | Loss: 0.2847
+2026-07-13 17:10:41 - bpr_baseline - INFO - Epoch  25/200 | Time:  5.69s | Loss: 0.2816
+2026-07-13 17:10:47 - bpr_baseline - INFO - Epoch  26/200 | Time:  5.81s | Loss: 0.2784
+2026-07-13 17:10:53 - bpr_baseline - INFO - Epoch  27/200 | Time:  5.83s | Loss: 0.2763
+2026-07-13 17:10:59 - bpr_baseline - INFO - Epoch  28/200 | Time:  5.70s | Loss: 0.2713
+2026-07-13 17:11:04 - bpr_baseline - INFO - Epoch  29/200 | Time:  5.61s | Loss: 0.2692
+2026-07-13 17:11:21 - bpr_baseline - INFO - Epoch  30/200 | Time:  5.90s | Loss: 0.2666 | nDCG: 0.2705 | UPD: 0.3244 | AD: 0.0950 | EE: 0.0093
+2026-07-13 17:11:21 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_30.pt
+2026-07-13 17:11:21 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:11:21 - bpr_baseline - INFO -   New best nDCG: 0.2705 (saved as best_model.pt)
+2026-07-13 17:11:27 - bpr_baseline - INFO - Epoch  31/200 | Time:  5.92s | Loss: 0.2641
+2026-07-13 17:11:32 - bpr_baseline - INFO - Epoch  32/200 | Time:  5.67s | Loss: 0.2619
+2026-07-13 17:11:38 - bpr_baseline - INFO - Epoch  33/200 | Time:  5.81s | Loss: 0.2586
+2026-07-13 17:11:44 - bpr_baseline - INFO - Epoch  34/200 | Time:  5.88s | Loss: 0.2572
+2026-07-13 17:11:50 - bpr_baseline - INFO - Epoch  35/200 | Time:  5.87s | Loss: 0.2545
+2026-07-13 17:11:56 - bpr_baseline - INFO - Epoch  36/200 | Time:  5.64s | Loss: 0.2531
+2026-07-13 17:12:02 - bpr_baseline - INFO - Epoch  37/200 | Time:  5.91s | Loss: 0.2500
+2026-07-13 17:12:07 - bpr_baseline - INFO - Epoch  38/200 | Time:  5.77s | Loss: 0.2471
+2026-07-13 17:12:13 - bpr_baseline - INFO - Epoch  39/200 | Time:  5.92s | Loss: 0.2455
+2026-07-13 17:12:30 - bpr_baseline - INFO - Epoch  40/200 | Time:  5.69s | Loss: 0.2442 | nDCG: 0.2945 | UPD: 0.3213 | AD: 0.1449 | EE: 0.0143
+2026-07-13 17:12:30 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_40.pt
+2026-07-13 17:12:30 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:12:30 - bpr_baseline - INFO -   New best nDCG: 0.2945 (saved as best_model.pt)
+2026-07-13 17:12:36 - bpr_baseline - INFO - Epoch  41/200 | Time:  5.84s | Loss: 0.2421
+2026-07-13 17:12:41 - bpr_baseline - INFO - Epoch  42/200 | Time:  5.87s | Loss: 0.2398
+2026-07-13 17:12:47 - bpr_baseline - INFO - Epoch  43/200 | Time:  5.59s | Loss: 0.2378
+2026-07-13 17:12:53 - bpr_baseline - INFO - Epoch  44/200 | Time:  5.86s | Loss: 0.2352
+2026-07-13 17:12:59 - bpr_baseline - INFO - Epoch  45/200 | Time:  5.83s | Loss: 0.2339
+2026-07-13 17:13:05 - bpr_baseline - INFO - Epoch  46/200 | Time:  5.86s | Loss: 0.2321
+2026-07-13 17:13:10 - bpr_baseline - INFO - Epoch  47/200 | Time:  5.60s | Loss: 0.2300
+2026-07-13 17:13:16 - bpr_baseline - INFO - Epoch  48/200 | Time:  5.89s | Loss: 0.2294
+2026-07-13 17:13:22 - bpr_baseline - INFO - Epoch  49/200 | Time:  5.97s | Loss: 0.2275
+2026-07-13 17:13:38 - bpr_baseline - INFO - Epoch  50/200 | Time:  5.60s | Loss: 0.2255 | nDCG: 0.3147 | UPD: 0.3178 | AD: 0.1935 | EE: 0.0210
+2026-07-13 17:13:38 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_50.pt
+2026-07-13 17:13:38 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:13:38 - bpr_baseline - INFO -   New best nDCG: 0.3147 (saved as best_model.pt)
+2026-07-13 17:13:44 - bpr_baseline - INFO - Epoch  51/200 | Time:  5.96s | Loss: 0.2247
+2026-07-13 17:13:50 - bpr_baseline - INFO - Epoch  52/200 | Time:  5.97s | Loss: 0.2229
+2026-07-13 17:13:56 - bpr_baseline - INFO - Epoch  53/200 | Time:  5.81s | Loss: 0.2219
+2026-07-13 17:14:02 - bpr_baseline - INFO - Epoch  54/200 | Time:  5.77s | Loss: 0.2198
+2026-07-13 17:14:08 - bpr_baseline - INFO - Epoch  55/200 | Time:  5.89s | Loss: 0.2197
+2026-07-13 17:14:14 - bpr_baseline - INFO - Epoch  56/200 | Time:  5.96s | Loss: 0.2175
+2026-07-13 17:14:19 - bpr_baseline - INFO - Epoch  57/200 | Time:  5.78s | Loss: 0.2161
+2026-07-13 17:14:25 - bpr_baseline - INFO - Epoch  58/200 | Time:  5.72s | Loss: 0.2143
+2026-07-13 17:14:31 - bpr_baseline - INFO - Epoch  59/200 | Time:  5.92s | Loss: 0.2140
+2026-07-13 17:14:47 - bpr_baseline - INFO - Epoch  60/200 | Time:  5.81s | Loss: 0.2124 | nDCG: 0.3289 | UPD: 0.3121 | AD: 0.2356 | EE: 0.0284
+2026-07-13 17:14:47 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_60.pt
+2026-07-13 17:14:47 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:14:47 - bpr_baseline - INFO -   New best nDCG: 0.3289 (saved as best_model.pt)
+2026-07-13 17:14:53 - bpr_baseline - INFO - Epoch  61/200 | Time:  5.74s | Loss: 0.2115
+2026-07-13 17:14:59 - bpr_baseline - INFO - Epoch  62/200 | Time:  5.94s | Loss: 0.2101
+2026-07-13 17:15:05 - bpr_baseline - INFO - Epoch  63/200 | Time:  6.06s | Loss: 0.2090
+2026-07-13 17:15:11 - bpr_baseline - INFO - Epoch  64/200 | Time:  6.09s | Loss: 0.2075
+2026-07-13 17:15:17 - bpr_baseline - INFO - Epoch  65/200 | Time:  5.74s | Loss: 0.2070
+2026-07-13 17:15:23 - bpr_baseline - INFO - Epoch  66/200 | Time:  6.06s | Loss: 0.2063
+2026-07-13 17:15:29 - bpr_baseline - INFO - Epoch  67/200 | Time:  5.96s | Loss: 0.2048
+2026-07-13 17:15:35 - bpr_baseline - INFO - Epoch  68/200 | Time:  5.87s | Loss: 0.2030
+2026-07-13 17:15:41 - bpr_baseline - INFO - Epoch  69/200 | Time:  5.95s | Loss: 0.2033
+2026-07-13 17:15:58 - bpr_baseline - INFO - Epoch  70/200 | Time:  5.95s | Loss: 0.2017 | nDCG: 0.3405 | UPD: 0.3058 | AD: 0.2596 | EE: 0.0353
+2026-07-13 17:15:58 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_70.pt
+2026-07-13 17:15:58 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:15:58 - bpr_baseline - INFO -   New best nDCG: 0.3405 (saved as best_model.pt)
+2026-07-13 17:16:04 - bpr_baseline - INFO - Epoch  71/200 | Time:  5.98s | Loss: 0.2013
+2026-07-13 17:16:09 - bpr_baseline - INFO - Epoch  72/200 | Time:  5.69s | Loss: 0.2004
+2026-07-13 17:16:15 - bpr_baseline - INFO - Epoch  73/200 | Time:  5.99s | Loss: 0.1987
+2026-07-13 17:16:21 - bpr_baseline - INFO - Epoch  74/200 | Time:  5.98s | Loss: 0.1980
+2026-07-13 17:16:27 - bpr_baseline - INFO - Epoch  75/200 | Time:  6.07s | Loss: 0.1970
+2026-07-13 17:16:33 - bpr_baseline - INFO - Epoch  76/200 | Time:  5.80s | Loss: 0.1954
+2026-07-13 17:16:39 - bpr_baseline - INFO - Epoch  77/200 | Time:  6.00s | Loss: 0.1955
+2026-07-13 17:16:45 - bpr_baseline - INFO - Epoch  78/200 | Time:  6.02s | Loss: 0.1944
+2026-07-13 17:16:51 - bpr_baseline - INFO - Epoch  79/200 | Time:  5.89s | Loss: 0.1927
+2026-07-13 17:17:08 - bpr_baseline - INFO - Epoch  80/200 | Time:  5.84s | Loss: 0.1924 | nDCG: 0.3503 | UPD: 0.3003 | AD: 0.2787 | EE: 0.0422
+2026-07-13 17:17:08 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_80.pt
+2026-07-13 17:17:08 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:17:08 - bpr_baseline - INFO -   New best nDCG: 0.3503 (saved as best_model.pt)
+2026-07-13 17:17:14 - bpr_baseline - INFO - Epoch  81/200 | Time:  6.09s | Loss: 0.1925
+2026-07-13 17:17:20 - bpr_baseline - INFO - Epoch  82/200 | Time:  5.99s | Loss: 0.1906
+2026-07-13 17:17:25 - bpr_baseline - INFO - Epoch  83/200 | Time:  5.70s | Loss: 0.1901
+2026-07-13 17:17:31 - bpr_baseline - INFO - Epoch  84/200 | Time:  6.01s | Loss: 0.1899
+2026-07-13 17:17:37 - bpr_baseline - INFO - Epoch  85/200 | Time:  5.95s | Loss: 0.1885
+2026-07-13 17:17:43 - bpr_baseline - INFO - Epoch  86/200 | Time:  5.80s | Loss: 0.1874
+2026-07-13 17:17:49 - bpr_baseline - INFO - Epoch  87/200 | Time:  5.92s | Loss: 0.1866
+2026-07-13 17:17:55 - bpr_baseline - INFO - Epoch  88/200 | Time:  5.93s | Loss: 0.1870
+2026-07-13 17:18:01 - bpr_baseline - INFO - Epoch  89/200 | Time:  5.89s | Loss: 0.1850
+2026-07-13 17:18:17 - bpr_baseline - INFO - Epoch  90/200 | Time:  5.86s | Loss: 0.1850 | nDCG: 0.3582 | UPD: 0.2944 | AD: 0.3028 | EE: 0.0481
+2026-07-13 17:18:18 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_90.pt
+2026-07-13 17:18:18 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:18:18 - bpr_baseline - INFO -   New best nDCG: 0.3582 (saved as best_model.pt)
+2026-07-13 17:18:24 - bpr_baseline - INFO - Epoch  91/200 | Time:  6.09s | Loss: 0.1838
+2026-07-13 17:18:30 - bpr_baseline - INFO - Epoch  92/200 | Time:  5.96s | Loss: 0.1835
+2026-07-13 17:18:35 - bpr_baseline - INFO - Epoch  93/200 | Time:  5.91s | Loss: 0.1831
+2026-07-13 17:18:41 - bpr_baseline - INFO - Epoch  94/200 | Time:  5.97s | Loss: 0.1822
+2026-07-13 17:18:47 - bpr_baseline - INFO - Epoch  95/200 | Time:  5.92s | Loss: 0.1819
+2026-07-13 17:18:53 - bpr_baseline - INFO - Epoch  96/200 | Time:  5.92s | Loss: 0.1799
+2026-07-13 17:18:59 - bpr_baseline - INFO - Epoch  97/200 | Time:  5.78s | Loss: 0.1800
+2026-07-13 17:19:05 - bpr_baseline - INFO - Epoch  98/200 | Time:  5.91s | Loss: 0.1796
+2026-07-13 17:19:11 - bpr_baseline - INFO - Epoch  99/200 | Time:  6.02s | Loss: 0.1785
+2026-07-13 17:19:28 - bpr_baseline - INFO - Epoch 100/200 | Time:  6.09s | Loss: 0.1775 | nDCG: 0.3642 | UPD: 0.2881 | AD: 0.3214 | EE: 0.0537
+2026-07-13 17:19:28 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_100.pt
+2026-07-13 17:19:28 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:19:28 - bpr_baseline - INFO -   New best nDCG: 0.3642 (saved as best_model.pt)
+2026-07-13 17:19:34 - bpr_baseline - INFO - Epoch 101/200 | Time:  5.80s | Loss: 0.1764
+2026-07-13 17:19:40 - bpr_baseline - INFO - Epoch 102/200 | Time:  6.07s | Loss: 0.1760
+2026-07-13 17:19:46 - bpr_baseline - INFO - Epoch 103/200 | Time:  5.89s | Loss: 0.1758
+2026-07-13 17:19:52 - bpr_baseline - INFO - Epoch 104/200 | Time:  5.95s | Loss: 0.1754
+2026-07-13 17:19:57 - bpr_baseline - INFO - Epoch 105/200 | Time:  5.74s | Loss: 0.1746
+2026-07-13 17:20:03 - bpr_baseline - INFO - Epoch 106/200 | Time:  5.91s | Loss: 0.1727
+2026-07-13 17:20:09 - bpr_baseline - INFO - Epoch 107/200 | Time:  6.03s | Loss: 0.1734
+2026-07-13 17:20:15 - bpr_baseline - INFO - Epoch 108/200 | Time:  5.95s | Loss: 0.1727
+2026-07-13 17:20:21 - bpr_baseline - INFO - Epoch 109/200 | Time:  5.97s | Loss: 0.1716
+2026-07-13 17:20:38 - bpr_baseline - INFO - Epoch 110/200 | Time:  6.06s | Loss: 0.1717 | nDCG: 0.3691 | UPD: 0.2836 | AD: 0.3389 | EE: 0.0595
+2026-07-13 17:20:38 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_110.pt
+2026-07-13 17:20:38 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:20:38 - bpr_baseline - INFO -   New best nDCG: 0.3691 (saved as best_model.pt)
+2026-07-13 17:20:44 - bpr_baseline - INFO - Epoch 111/200 | Time:  6.22s | Loss: 0.1709
+2026-07-13 17:20:50 - bpr_baseline - INFO - Epoch 112/200 | Time:  5.91s | Loss: 0.1698
+2026-07-13 17:20:56 - bpr_baseline - INFO - Epoch 113/200 | Time:  5.93s | Loss: 0.1697
+2026-07-13 17:21:02 - bpr_baseline - INFO - Epoch 114/200 | Time:  5.92s | Loss: 0.1698
+2026-07-13 17:21:08 - bpr_baseline - INFO - Epoch 115/200 | Time:  5.80s | Loss: 0.1682
+2026-07-13 17:21:14 - bpr_baseline - INFO - Epoch 116/200 | Time:  5.95s | Loss: 0.1675
+2026-07-13 17:21:20 - bpr_baseline - INFO - Epoch 117/200 | Time:  6.06s | Loss: 0.1669
+2026-07-13 17:21:26 - bpr_baseline - INFO - Epoch 118/200 | Time:  5.88s | Loss: 0.1660
+2026-07-13 17:21:32 - bpr_baseline - INFO - Epoch 119/200 | Time:  5.91s | Loss: 0.1652
+2026-07-13 17:21:49 - bpr_baseline - INFO - Epoch 120/200 | Time:  6.10s | Loss: 0.1660 | nDCG: 0.3731 | UPD: 0.2795 | AD: 0.3540 | EE: 0.0638
+2026-07-13 17:21:49 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_120.pt
+2026-07-13 17:21:49 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:21:49 - bpr_baseline - INFO -   New best nDCG: 0.3731 (saved as best_model.pt)
+2026-07-13 17:21:55 - bpr_baseline - INFO - Epoch 121/200 | Time:  6.02s | Loss: 0.1643
+2026-07-13 17:22:01 - bpr_baseline - INFO - Epoch 122/200 | Time:  5.98s | Loss: 0.1638
+2026-07-13 17:22:07 - bpr_baseline - INFO - Epoch 123/200 | Time:  5.85s | Loss: 0.1634
+2026-07-13 17:22:13 - bpr_baseline - INFO - Epoch 124/200 | Time:  6.06s | Loss: 0.1631
+2026-07-13 17:22:19 - bpr_baseline - INFO - Epoch 125/200 | Time:  6.13s | Loss: 0.1617
+2026-07-13 17:22:25 - bpr_baseline - INFO - Epoch 126/200 | Time:  5.82s | Loss: 0.1608
+2026-07-13 17:22:31 - bpr_baseline - INFO - Epoch 127/200 | Time:  5.94s | Loss: 0.1614
+2026-07-13 17:22:37 - bpr_baseline - INFO - Epoch 128/200 | Time:  6.01s | Loss: 0.1599
+2026-07-13 17:22:43 - bpr_baseline - INFO - Epoch 129/200 | Time:  6.15s | Loss: 0.1606
+2026-07-13 17:22:59 - bpr_baseline - INFO - Epoch 130/200 | Time:  5.89s | Loss: 0.1591 | nDCG: 0.3759 | UPD: 0.2744 | AD: 0.3708 | EE: 0.0684
+2026-07-13 17:22:59 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_130.pt
+2026-07-13 17:22:59 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:22:59 - bpr_baseline - INFO -   New best nDCG: 0.3759 (saved as best_model.pt)
+2026-07-13 17:23:05 - bpr_baseline - INFO - Epoch 131/200 | Time:  5.94s | Loss: 0.1581
+2026-07-13 17:23:11 - bpr_baseline - INFO - Epoch 132/200 | Time:  6.04s | Loss: 0.1585
+2026-07-13 17:23:17 - bpr_baseline - INFO - Epoch 133/200 | Time:  5.85s | Loss: 0.1578
+2026-07-13 17:23:23 - bpr_baseline - INFO - Epoch 134/200 | Time:  6.08s | Loss: 0.1568
+2026-07-13 17:23:29 - bpr_baseline - INFO - Epoch 135/200 | Time:  5.90s | Loss: 0.1557
+2026-07-13 17:23:35 - bpr_baseline - INFO - Epoch 136/200 | Time:  6.04s | Loss: 0.1555
+2026-07-13 17:23:41 - bpr_baseline - INFO - Epoch 137/200 | Time:  5.77s | Loss: 0.1549
+2026-07-13 17:23:47 - bpr_baseline - INFO - Epoch 138/200 | Time:  6.07s | Loss: 0.1553
+2026-07-13 17:23:53 - bpr_baseline - INFO - Epoch 139/200 | Time:  6.11s | Loss: 0.1537
+2026-07-13 17:24:10 - bpr_baseline - INFO - Epoch 140/200 | Time:  5.95s | Loss: 0.1536 | nDCG: 0.3797 | UPD: 0.2706 | AD: 0.3864 | EE: 0.0724
+2026-07-13 17:24:10 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_140.pt
+2026-07-13 17:24:10 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:24:10 - bpr_baseline - INFO -   New best nDCG: 0.3797 (saved as best_model.pt)
+2026-07-13 17:24:16 - bpr_baseline - INFO - Epoch 141/200 | Time:  5.79s | Loss: 0.1530
+2026-07-13 17:24:22 - bpr_baseline - INFO - Epoch 142/200 | Time:  6.09s | Loss: 0.1523
+2026-07-13 17:24:28 - bpr_baseline - INFO - Epoch 143/200 | Time:  6.30s | Loss: 0.1514
+2026-07-13 17:24:34 - bpr_baseline - INFO - Epoch 144/200 | Time:  6.00s | Loss: 0.1510
+2026-07-13 17:24:40 - bpr_baseline - INFO - Epoch 145/200 | Time:  5.99s | Loss: 0.1506
+2026-07-13 17:24:46 - bpr_baseline - INFO - Epoch 146/200 | Time:  6.07s | Loss: 0.1509
+2026-07-13 17:24:52 - bpr_baseline - INFO - Epoch 147/200 | Time:  6.16s | Loss: 0.1493
+2026-07-13 17:24:58 - bpr_baseline - INFO - Epoch 148/200 | Time:  5.98s | Loss: 0.1482
+2026-07-13 17:25:04 - bpr_baseline - INFO - Epoch 149/200 | Time:  6.25s | Loss: 0.1487
+2026-07-13 17:25:21 - bpr_baseline - INFO - Epoch 150/200 | Time:  6.14s | Loss: 0.1476 | nDCG: 0.3826 | UPD: 0.2679 | AD: 0.3985 | EE: 0.0760
+2026-07-13 17:25:21 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_150.pt
+2026-07-13 17:25:21 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:25:21 - bpr_baseline - INFO -   New best nDCG: 0.3826 (saved as best_model.pt)
+2026-07-13 17:25:27 - bpr_baseline - INFO - Epoch 151/200 | Time:  6.02s | Loss: 0.1467
+2026-07-13 17:25:33 - bpr_baseline - INFO - Epoch 152/200 | Time:  5.93s | Loss: 0.1468
+2026-07-13 17:25:39 - bpr_baseline - INFO - Epoch 153/200 | Time:  6.18s | Loss: 0.1459
+2026-07-13 17:25:46 - bpr_baseline - INFO - Epoch 154/200 | Time:  6.36s | Loss: 0.1459
+2026-07-13 17:25:52 - bpr_baseline - INFO - Epoch 155/200 | Time:  5.99s | Loss: 0.1447
+2026-07-13 17:25:58 - bpr_baseline - INFO - Epoch 156/200 | Time:  6.00s | Loss: 0.1441
+2026-07-13 17:26:04 - bpr_baseline - INFO - Epoch 157/200 | Time:  6.30s | Loss: 0.1446
+2026-07-13 17:26:10 - bpr_baseline - INFO - Epoch 158/200 | Time:  6.02s | Loss: 0.1443
+2026-07-13 17:26:16 - bpr_baseline - INFO - Epoch 159/200 | Time:  5.83s | Loss: 0.1427
+2026-07-13 17:26:33 - bpr_baseline - INFO - Epoch 160/200 | Time:  6.26s | Loss: 0.1426 | nDCG: 0.3833 | UPD: 0.2624 | AD: 0.4115 | EE: 0.0806
+2026-07-13 17:26:33 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_160.pt
+2026-07-13 17:26:33 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:26:33 - bpr_baseline - INFO -   New best nDCG: 0.3833 (saved as best_model.pt)
+2026-07-13 17:26:39 - bpr_baseline - INFO - Epoch 161/200 | Time:  6.02s | Loss: 0.1418
+2026-07-13 17:26:45 - bpr_baseline - INFO - Epoch 162/200 | Time:  5.96s | Loss: 0.1416
+2026-07-13 17:26:51 - bpr_baseline - INFO - Epoch 163/200 | Time:  6.17s | Loss: 0.1411
+2026-07-13 17:26:57 - bpr_baseline - INFO - Epoch 164/200 | Time:  6.22s | Loss: 0.1398
+2026-07-13 17:27:04 - bpr_baseline - INFO - Epoch 165/200 | Time:  6.15s | Loss: 0.1394
+2026-07-13 17:27:09 - bpr_baseline - INFO - Epoch 166/200 | Time:  5.76s | Loss: 0.1391
+2026-07-13 17:27:15 - bpr_baseline - INFO - Epoch 167/200 | Time:  6.08s | Loss: 0.1382
+2026-07-13 17:27:21 - bpr_baseline - INFO - Epoch 168/200 | Time:  6.11s | Loss: 0.1381
+2026-07-13 17:27:27 - bpr_baseline - INFO - Epoch 169/200 | Time:  5.91s | Loss: 0.1379
+2026-07-13 17:27:44 - bpr_baseline - INFO - Epoch 170/200 | Time:  6.18s | Loss: 0.1370 | nDCG: 0.3858 | UPD: 0.2586 | AD: 0.4153 | EE: 0.0840
+2026-07-13 17:27:44 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_170.pt
+2026-07-13 17:27:44 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:27:44 - bpr_baseline - INFO -   New best nDCG: 0.3858 (saved as best_model.pt)
+2026-07-13 17:27:51 - bpr_baseline - INFO - Epoch 171/200 | Time:  6.09s | Loss: 0.1367
+2026-07-13 17:27:57 - bpr_baseline - INFO - Epoch 172/200 | Time:  6.07s | Loss: 0.1363
+2026-07-13 17:28:02 - bpr_baseline - INFO - Epoch 173/200 | Time:  5.80s | Loss: 0.1360
+2026-07-13 17:28:09 - bpr_baseline - INFO - Epoch 174/200 | Time:  6.14s | Loss: 0.1346
+2026-07-13 17:28:15 - bpr_baseline - INFO - Epoch 175/200 | Time:  6.12s | Loss: 0.1346
+2026-07-13 17:28:21 - bpr_baseline - INFO - Epoch 176/200 | Time:  5.89s | Loss: 0.1342
+2026-07-13 17:28:26 - bpr_baseline - INFO - Epoch 177/200 | Time:  5.66s | Loss: 0.1344
+2026-07-13 17:28:32 - bpr_baseline - INFO - Epoch 178/200 | Time:  6.30s | Loss: 0.1328
+2026-07-13 17:28:39 - bpr_baseline - INFO - Epoch 179/200 | Time:  6.20s | Loss: 0.1316
+2026-07-13 17:28:55 - bpr_baseline - INFO - Epoch 180/200 | Time:  6.03s | Loss: 0.1323 | nDCG: 0.3872 | UPD: 0.2537 | AD: 0.4263 | EE: 0.0885
+2026-07-13 17:28:55 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_180.pt
+2026-07-13 17:28:55 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:28:55 - bpr_baseline - INFO -   New best nDCG: 0.3872 (saved as best_model.pt)
+2026-07-13 17:29:01 - bpr_baseline - INFO - Epoch 181/200 | Time:  6.01s | Loss: 0.1316
+2026-07-13 17:29:08 - bpr_baseline - INFO - Epoch 182/200 | Time:  6.17s | Loss: 0.1311
+2026-07-13 17:29:14 - bpr_baseline - INFO - Epoch 183/200 | Time:  6.10s | Loss: 0.1305
+2026-07-13 17:29:20 - bpr_baseline - INFO - Epoch 184/200 | Time:  5.99s | Loss: 0.1297
+2026-07-13 17:29:26 - bpr_baseline - INFO - Epoch 185/200 | Time:  6.14s | Loss: 0.1291
+2026-07-13 17:29:32 - bpr_baseline - INFO - Epoch 186/200 | Time:  6.09s | Loss: 0.1296
+2026-07-13 17:29:38 - bpr_baseline - INFO - Epoch 187/200 | Time:  5.95s | Loss: 0.1286
+2026-07-13 17:29:44 - bpr_baseline - INFO - Epoch 188/200 | Time:  5.92s | Loss: 0.1281
+2026-07-13 17:29:50 - bpr_baseline - INFO - Epoch 189/200 | Time:  6.03s | Loss: 0.1273
+2026-07-13 17:30:07 - bpr_baseline - INFO - Epoch 190/200 | Time:  6.04s | Loss: 0.1262 | nDCG: 0.3881 | UPD: 0.2510 | AD: 0.4323 | EE: 0.0911
+2026-07-13 17:30:07 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_190.pt
+2026-07-13 17:30:07 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:30:07 - bpr_baseline - INFO -   New best nDCG: 0.3881 (saved as best_model.pt)
+2026-07-13 17:30:13 - bpr_baseline - INFO - Epoch 191/200 | Time:  5.96s | Loss: 0.1267
+2026-07-13 17:30:18 - bpr_baseline - INFO - Epoch 192/200 | Time:  5.89s | Loss: 0.1263
+2026-07-13 17:30:25 - bpr_baseline - INFO - Epoch 193/200 | Time:  6.17s | Loss: 0.1263
+2026-07-13 17:30:31 - bpr_baseline - INFO - Epoch 194/200 | Time:  6.13s | Loss: 0.1249
+2026-07-13 17:30:37 - bpr_baseline - INFO - Epoch 195/200 | Time:  5.83s | Loss: 0.1244
+2026-07-13 17:30:43 - bpr_baseline - INFO - Epoch 196/200 | Time:  6.08s | Loss: 0.1248
+2026-07-13 17:30:49 - bpr_baseline - INFO - Epoch 197/200 | Time:  6.16s | Loss: 0.1240
+2026-07-13 17:30:55 - bpr_baseline - INFO - Epoch 198/200 | Time:  5.88s | Loss: 0.1234
+2026-07-13 17:31:01 - bpr_baseline - INFO - Epoch 199/200 | Time:  6.18s | Loss: 0.1224
+2026-07-13 17:31:18 - bpr_baseline - INFO - Epoch 200/200 | Time:  6.23s | Loss: 0.1223 | nDCG: 0.3893 | UPD: 0.2478 | AD: 0.4468 | EE: 0.0946
+2026-07-13 17:31:18 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/checkpoint_epoch_200.pt
+2026-07-13 17:31:18 - bpr_baseline - INFO - Checkpoint saved: ./checkpoints/bpr_baseline/best_model.pt
+2026-07-13 17:31:18 - bpr_baseline - INFO -   New best nDCG: 0.3893 (saved as best_model.pt)
+2026-07-13 17:31:18 - bpr_baseline - INFO - Training completed in 1186.90s (19.78min)
+2026-07-13 17:31:18 - bpr_baseline - INFO - Best model: epoch 200, nDCG=0.3893
+2026-07-13 17:31:18 - bpr_baseline - INFO - Evaluating model for λ=0.0...
+2026-07-13 17:31:29 - bpr_baseline - INFO - Run λ=0.0 Complete | nDCG: 0.3893 | UPD: 0.2478

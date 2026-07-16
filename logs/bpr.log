@@ -1,0 +1,590 @@
+2026-07-11 06:58:48 - train - INFO - ============================================================
+2026-07-11 06:58:48 - train - INFO - ILE-BPR Training Started
+2026-07-11 06:58:48 - train - INFO - ============================================================
+2026-07-11 06:58:48 - train - INFO - Configuration: {'seed': 42, 'deterministic': True, 'dataset': {'name': 'movielens-1m', 'data_dir': './data', 'train_ratio': 0.8, 'min_interactions': 5}, 'model': {'name': 'ile_bpr', 'embedding_dim': 128, 'init_std': 0.01}, 'loss': {'name': 'bpr', 'distance': 'none', 'lambda_ile': 0.0, 'eps': 1e-08, 'reg_weight': 0.0001}, 'training': {'epochs': 200, 'batch_size': 1024, 'learning_rate': 0.0001, 'optimizer': 'adam', 'weight_decay': 0.0, 'num_negatives': 1, 'eval_freq': 10, 'save_freq': 10, 'early_stopping': {'enabled': True, 'patience': 20, 'metric': 'nDCG', 'mode': 'max', 'min_delta': 0.0}}, 'evaluation': {'top_k': 10, 'metrics': ['nDCG', 'UPD', 'AD', 'EE']}, 'logging': {'log_dir': './logs', 'checkpoint_dir': './checkpoints/bpr', 'use_tensorboard': True, 'log_interval': 100}, 'device': 'auto', 'distributed': False}
+2026-07-11 06:58:48 - train - INFO - Early stopping: ENABLED
+2026-07-11 06:58:48 - train - INFO -   Patience: 20
+2026-07-11 06:58:48 - train - INFO -   Metric: nDCG
+2026-07-11 06:58:48 - train - INFO -   Mode: max
+2026-07-11 06:58:48 - train - INFO - Loading dataset: movielens-1m
+2026-07-11 06:58:48 - train - INFO - Loading preprocessed dataset from ./data/movielens_1m_processed.pkl
+2026-07-11 06:58:48 - train - INFO - Dataset loaded: 6040 users, 3416 items
+2026-07-11 06:58:48 - train - INFO - Train: 797,275, Test: 202,336
+2026-07-11 06:58:48 - train - INFO - Model: BPRModel
+2026-07-11 06:58:48 - train - INFO - Parameters: 1,210,368
+2026-07-11 06:58:48 - train - INFO - Embedding dim: 128
+2026-07-11 06:58:49 - train - INFO - Starting training...
+2026-07-11 06:58:49 - train - INFO - Starting training for 200 epochs
+2026-07-11 06:58:49 - train - INFO - Model: BPRModel
+2026-07-11 06:58:49 - train - INFO - Dataset: movielens-1m
+2026-07-11 06:58:49 - train - INFO - Users: 6040, Items: 3416
+2026-07-11 06:58:49 - train - INFO - Train interactions: 797,275
+2026-07-11 06:58:49 - train - INFO - Use ILE: False
+2026-07-11 06:58:50 - train - INFO - Batches per epoch: 779
+2026-07-11 06:59:05 - train - INFO - Epoch   1/200 | Time:  5.86s | Loss: 0.6929 | nDCG: 0.1488 | UPD: 0.3123 | AD: 0.7957 | EE: 0.0991
+2026-07-11 06:59:05 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 06:59:05 - train - INFO -   New best nDCG: 0.1488 (saved as best_model.pt)
+2026-07-11 06:59:11 - train - INFO - Epoch   2/200 | Time:  5.55s | Loss: 0.6550
+2026-07-11 06:59:16 - train - INFO - Epoch   3/200 | Time:  5.74s | Loss: 0.5057
+2026-07-11 06:59:22 - train - INFO - Epoch   4/200 | Time:  5.73s | Loss: 0.4145
+2026-07-11 06:59:28 - train - INFO - Epoch   5/200 | Time:  5.75s | Loss: 0.3803
+2026-07-11 06:59:34 - train - INFO - Epoch   6/200 | Time:  5.77s | Loss: 0.3659
+2026-07-11 06:59:39 - train - INFO - Epoch   7/200 | Time:  5.56s | Loss: 0.3557
+2026-07-11 06:59:45 - train - INFO - Epoch   8/200 | Time:  5.66s | Loss: 0.3484
+2026-07-11 06:59:51 - train - INFO - Epoch   9/200 | Time:  5.71s | Loss: 0.3437
+2026-07-11 07:00:06 - train - INFO - Epoch  10/200 | Time:  5.63s | Loss: 0.3376 | nDCG: 0.2166 | UPD: 0.3408 | AD: 0.0369 | EE: 0.0047
+2026-07-11 07:00:06 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_10.pt
+2026-07-11 07:00:06 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:00:06 - train - INFO -   New best nDCG: 0.2166 (saved as best_model.pt)
+2026-07-11 07:00:12 - train - INFO - Epoch  11/200 | Time:  5.76s | Loss: 0.3332
+2026-07-11 07:00:17 - train - INFO - Epoch  12/200 | Time:  5.49s | Loss: 0.3287
+2026-07-11 07:00:23 - train - INFO - Epoch  13/200 | Time:  5.67s | Loss: 0.3235
+2026-07-11 07:00:28 - train - INFO - Epoch  14/200 | Time:  5.63s | Loss: 0.3187
+2026-07-11 07:00:34 - train - INFO - Epoch  15/200 | Time:  5.70s | Loss: 0.3138
+2026-07-11 07:00:40 - train - INFO - Epoch  16/200 | Time:  5.68s | Loss: 0.3098
+2026-07-11 07:00:45 - train - INFO - Epoch  17/200 | Time:  5.46s | Loss: 0.3059
+2026-07-11 07:00:51 - train - INFO - Epoch  18/200 | Time:  5.67s | Loss: 0.3018
+2026-07-11 07:00:57 - train - INFO - Epoch  19/200 | Time:  5.75s | Loss: 0.2975
+2026-07-11 07:01:12 - train - INFO - Epoch  20/200 | Time:  5.69s | Loss: 0.2925 | nDCG: 0.2504 | UPD: 0.3406 | AD: 0.0685 | EE: 0.0067
+2026-07-11 07:01:12 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_20.pt
+2026-07-11 07:01:12 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:01:12 - train - INFO -   New best nDCG: 0.2504 (saved as best_model.pt)
+2026-07-11 07:01:18 - train - INFO - Epoch  21/200 | Time:  5.65s | Loss: 0.2888
+2026-07-11 07:01:23 - train - INFO - Epoch  22/200 | Time:  5.51s | Loss: 0.2852
+2026-07-11 07:01:29 - train - INFO - Epoch  23/200 | Time:  5.70s | Loss: 0.2827
+2026-07-11 07:01:35 - train - INFO - Epoch  24/200 | Time:  5.66s | Loss: 0.2786
+2026-07-11 07:01:40 - train - INFO - Epoch  25/200 | Time:  5.71s | Loss: 0.2755
+2026-07-11 07:01:46 - train - INFO - Epoch  26/200 | Time:  5.65s | Loss: 0.2722
+2026-07-11 07:01:51 - train - INFO - Epoch  27/200 | Time:  5.50s | Loss: 0.2696
+2026-07-11 07:01:57 - train - INFO - Epoch  28/200 | Time:  5.68s | Loss: 0.2657
+2026-07-11 07:02:03 - train - INFO - Epoch  29/200 | Time:  5.67s | Loss: 0.2631
+2026-07-11 07:02:18 - train - INFO - Epoch  30/200 | Time:  5.72s | Loss: 0.2602 | nDCG: 0.2794 | UPD: 0.3398 | AD: 0.1071 | EE: 0.0106
+2026-07-11 07:02:18 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_30.pt
+2026-07-11 07:02:18 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:02:18 - train - INFO -   New best nDCG: 0.2794 (saved as best_model.pt)
+2026-07-11 07:02:24 - train - INFO - Epoch  31/200 | Time:  5.77s | Loss: 0.2581
+2026-07-11 07:02:30 - train - INFO - Epoch  32/200 | Time:  5.52s | Loss: 0.2547
+2026-07-11 07:02:35 - train - INFO - Epoch  33/200 | Time:  5.66s | Loss: 0.2526
+2026-07-11 07:02:41 - train - INFO - Epoch  34/200 | Time:  5.73s | Loss: 0.2493
+2026-07-11 07:02:47 - train - INFO - Epoch  35/200 | Time:  5.66s | Loss: 0.2476
+2026-07-11 07:02:52 - train - INFO - Epoch  36/200 | Time:  5.69s | Loss: 0.2448
+2026-07-11 07:02:58 - train - INFO - Epoch  37/200 | Time:  5.52s | Loss: 0.2427
+2026-07-11 07:03:04 - train - INFO - Epoch  38/200 | Time:  5.74s | Loss: 0.2403
+2026-07-11 07:03:09 - train - INFO - Epoch  39/200 | Time:  5.70s | Loss: 0.2383
+2026-07-11 07:03:25 - train - INFO - Epoch  40/200 | Time:  5.74s | Loss: 0.2362 | nDCG: 0.3020 | UPD: 0.3371 | AD: 0.1531 | EE: 0.0155
+2026-07-11 07:03:25 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_40.pt
+2026-07-11 07:03:25 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:03:25 - train - INFO -   New best nDCG: 0.3020 (saved as best_model.pt)
+2026-07-11 07:03:31 - train - INFO - Epoch  41/200 | Time:  5.75s | Loss: 0.2335
+2026-07-11 07:03:36 - train - INFO - Epoch  42/200 | Time:  5.50s | Loss: 0.2324
+2026-07-11 07:03:42 - train - INFO - Epoch  43/200 | Time:  5.71s | Loss: 0.2300
+2026-07-11 07:03:48 - train - INFO - Epoch  44/200 | Time:  5.76s | Loss: 0.2278
+2026-07-11 07:03:53 - train - INFO - Epoch  45/200 | Time:  5.83s | Loss: 0.2264
+2026-07-11 07:03:59 - train - INFO - Epoch  46/200 | Time:  5.80s | Loss: 0.2249
+2026-07-11 07:04:05 - train - INFO - Epoch  47/200 | Time:  5.51s | Loss: 0.2229
+2026-07-11 07:04:11 - train - INFO - Epoch  48/200 | Time:  5.78s | Loss: 0.2213
+2026-07-11 07:04:16 - train - INFO - Epoch  49/200 | Time:  5.70s | Loss: 0.2199
+2026-07-11 07:04:32 - train - INFO - Epoch  50/200 | Time:  5.77s | Loss: 0.2188 | nDCG: 0.3213 | UPD: 0.3336 | AD: 0.1888 | EE: 0.0208
+2026-07-11 07:04:32 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_50.pt
+2026-07-11 07:04:32 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:04:32 - train - INFO -   New best nDCG: 0.3213 (saved as best_model.pt)
+2026-07-11 07:04:37 - train - INFO - Epoch  51/200 | Time:  5.68s | Loss: 0.2162
+2026-07-11 07:04:43 - train - INFO - Epoch  52/200 | Time:  5.70s | Loss: 0.2153
+2026-07-11 07:04:49 - train - INFO - Epoch  53/200 | Time:  5.53s | Loss: 0.2138
+2026-07-11 07:04:54 - train - INFO - Epoch  54/200 | Time:  5.76s | Loss: 0.2128
+2026-07-11 07:05:00 - train - INFO - Epoch  55/200 | Time:  5.83s | Loss: 0.2109
+2026-07-11 07:05:06 - train - INFO - Epoch  56/200 | Time:  5.72s | Loss: 0.2097
+2026-07-11 07:05:12 - train - INFO - Epoch  57/200 | Time:  5.87s | Loss: 0.2091
+2026-07-11 07:05:17 - train - INFO - Epoch  58/200 | Time:  5.59s | Loss: 0.2075
+2026-07-11 07:05:23 - train - INFO - Epoch  59/200 | Time:  5.78s | Loss: 0.2062
+2026-07-11 07:05:39 - train - INFO - Epoch  60/200 | Time:  5.74s | Loss: 0.2051 | nDCG: 0.3366 | UPD: 0.3289 | AD: 0.2193 | EE: 0.0262
+2026-07-11 07:05:39 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_60.pt
+2026-07-11 07:05:39 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:05:39 - train - INFO -   New best nDCG: 0.3366 (saved as best_model.pt)
+2026-07-11 07:05:44 - train - INFO - Epoch  61/200 | Time:  5.75s | Loss: 0.2041
+2026-07-11 07:05:50 - train - INFO - Epoch  62/200 | Time:  5.73s | Loss: 0.2031
+2026-07-11 07:05:56 - train - INFO - Epoch  63/200 | Time:  5.45s | Loss: 0.2011
+2026-07-11 07:06:01 - train - INFO - Epoch  64/200 | Time:  5.74s | Loss: 0.2000
+2026-07-11 07:06:07 - train - INFO - Epoch  65/200 | Time:  5.69s | Loss: 0.1983
+2026-07-11 07:06:13 - train - INFO - Epoch  66/200 | Time:  5.68s | Loss: 0.1984
+2026-07-11 07:06:18 - train - INFO - Epoch  67/200 | Time:  5.66s | Loss: 0.1965
+2026-07-11 07:06:24 - train - INFO - Epoch  68/200 | Time:  5.54s | Loss: 0.1959
+2026-07-11 07:06:30 - train - INFO - Epoch  69/200 | Time:  5.72s | Loss: 0.1950
+2026-07-11 07:06:45 - train - INFO - Epoch  70/200 | Time:  5.72s | Loss: 0.1931 | nDCG: 0.3498 | UPD: 0.3241 | AD: 0.2468 | EE: 0.0318
+2026-07-11 07:06:45 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_70.pt
+2026-07-11 07:06:45 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:06:45 - train - INFO -   New best nDCG: 0.3498 (saved as best_model.pt)
+2026-07-11 07:06:51 - train - INFO - Epoch  71/200 | Time:  5.75s | Loss: 0.1923
+2026-07-11 07:06:56 - train - INFO - Epoch  72/200 | Time:  5.70s | Loss: 0.1914
+2026-07-11 07:07:02 - train - INFO - Epoch  73/200 | Time:  5.58s | Loss: 0.1900
+2026-07-11 07:07:08 - train - INFO - Epoch  74/200 | Time:  5.68s | Loss: 0.1897
+2026-07-11 07:07:13 - train - INFO - Epoch  75/200 | Time:  5.74s | Loss: 0.1894
+2026-07-11 07:07:19 - train - INFO - Epoch  76/200 | Time:  5.75s | Loss: 0.1878
+2026-07-11 07:07:25 - train - INFO - Epoch  77/200 | Time:  5.78s | Loss: 0.1865
+2026-07-11 07:07:31 - train - INFO - Epoch  78/200 | Time:  5.57s | Loss: 0.1858
+2026-07-11 07:07:36 - train - INFO - Epoch  79/200 | Time:  5.72s | Loss: 0.1848
+2026-07-11 07:07:52 - train - INFO - Epoch  80/200 | Time:  5.76s | Loss: 0.1846 | nDCG: 0.3609 | UPD: 0.3199 | AD: 0.2673 | EE: 0.0370
+2026-07-11 07:07:52 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_80.pt
+2026-07-11 07:07:52 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:07:52 - train - INFO -   New best nDCG: 0.3609 (saved as best_model.pt)
+2026-07-11 07:07:58 - train - INFO - Epoch  81/200 | Time:  5.86s | Loss: 0.1838
+2026-07-11 07:08:03 - train - INFO - Epoch  82/200 | Time:  5.80s | Loss: 0.1827
+2026-07-11 07:08:09 - train - INFO - Epoch  83/200 | Time:  5.48s | Loss: 0.1816
+2026-07-11 07:08:15 - train - INFO - Epoch  84/200 | Time:  5.84s | Loss: 0.1806
+2026-07-11 07:08:20 - train - INFO - Epoch  85/200 | Time:  5.82s | Loss: 0.1799
+2026-07-11 07:08:26 - train - INFO - Epoch  86/200 | Time:  5.86s | Loss: 0.1796
+2026-07-11 07:08:32 - train - INFO - Epoch  87/200 | Time:  5.79s | Loss: 0.1782
+2026-07-11 07:08:38 - train - INFO - Epoch  88/200 | Time:  5.60s | Loss: 0.1771
+2026-07-11 07:08:44 - train - INFO - Epoch  89/200 | Time:  5.78s | Loss: 0.1770
+2026-07-11 07:08:59 - train - INFO - Epoch  90/200 | Time:  5.77s | Loss: 0.1768 | nDCG: 0.3695 | UPD: 0.3153 | AD: 0.2860 | EE: 0.0419
+2026-07-11 07:08:59 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_90.pt
+2026-07-11 07:08:59 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:08:59 - train - INFO -   New best nDCG: 0.3695 (saved as best_model.pt)
+2026-07-11 07:09:05 - train - INFO - Epoch  91/200 | Time:  5.97s | Loss: 0.1753
+2026-07-11 07:09:11 - train - INFO - Epoch  92/200 | Time:  5.94s | Loss: 0.1753
+2026-07-11 07:09:17 - train - INFO - Epoch  93/200 | Time:  5.63s | Loss: 0.1739
+2026-07-11 07:09:23 - train - INFO - Epoch  94/200 | Time:  5.90s | Loss: 0.1735
+2026-07-11 07:09:28 - train - INFO - Epoch  95/200 | Time:  5.89s | Loss: 0.1720
+2026-07-11 07:09:34 - train - INFO - Epoch  96/200 | Time:  5.90s | Loss: 0.1718
+2026-07-11 07:09:40 - train - INFO - Epoch  97/200 | Time:  5.76s | Loss: 0.1701
+2026-07-11 07:09:46 - train - INFO - Epoch  98/200 | Time:  5.56s | Loss: 0.1700
+2026-07-11 07:09:51 - train - INFO - Epoch  99/200 | Time:  5.75s | Loss: 0.1695
+2026-07-11 07:10:07 - train - INFO - Epoch 100/200 | Time:  5.68s | Loss: 0.1692 | nDCG: 0.3768 | UPD: 0.3118 | AD: 0.2986 | EE: 0.0461
+2026-07-11 07:10:07 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_100.pt
+2026-07-11 07:10:07 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:10:07 - train - INFO -   New best nDCG: 0.3768 (saved as best_model.pt)
+2026-07-11 07:10:13 - train - INFO - Epoch 101/200 | Time:  5.81s | Loss: 0.1679
+2026-07-11 07:10:18 - train - INFO - Epoch 102/200 | Time:  5.73s | Loss: 0.1671
+2026-07-11 07:10:24 - train - INFO - Epoch 103/200 | Time:  5.65s | Loss: 0.1666
+2026-07-11 07:10:30 - train - INFO - Epoch 104/200 | Time:  5.85s | Loss: 0.1659
+2026-07-11 07:10:36 - train - INFO - Epoch 105/200 | Time:  5.74s | Loss: 0.1650
+2026-07-11 07:10:41 - train - INFO - Epoch 106/200 | Time:  5.79s | Loss: 0.1642
+2026-07-11 07:10:47 - train - INFO - Epoch 107/200 | Time:  5.70s | Loss: 0.1641
+2026-07-11 07:10:53 - train - INFO - Epoch 108/200 | Time:  5.64s | Loss: 0.1626
+2026-07-11 07:10:59 - train - INFO - Epoch 109/200 | Time:  5.76s | Loss: 0.1622
+2026-07-11 07:11:14 - train - INFO - Epoch 110/200 | Time:  5.73s | Loss: 0.1616 | nDCG: 0.3828 | UPD: 0.3069 | AD: 0.3124 | EE: 0.0505
+2026-07-11 07:11:14 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_110.pt
+2026-07-11 07:11:14 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:11:14 - train - INFO -   New best nDCG: 0.3828 (saved as best_model.pt)
+2026-07-11 07:11:20 - train - INFO - Epoch 111/200 | Time:  5.76s | Loss: 0.1611
+2026-07-11 07:11:25 - train - INFO - Epoch 112/200 | Time:  5.72s | Loss: 0.1605
+2026-07-11 07:11:31 - train - INFO - Epoch 113/200 | Time:  5.60s | Loss: 0.1596
+2026-07-11 07:11:37 - train - INFO - Epoch 114/200 | Time:  5.66s | Loss: 0.1591
+2026-07-11 07:11:42 - train - INFO - Epoch 115/200 | Time:  5.70s | Loss: 0.1588
+2026-07-11 07:11:48 - train - INFO - Epoch 116/200 | Time:  5.73s | Loss: 0.1579
+2026-07-11 07:11:54 - train - INFO - Epoch 117/200 | Time:  5.79s | Loss: 0.1572
+2026-07-11 07:12:00 - train - INFO - Epoch 118/200 | Time:  5.62s | Loss: 0.1569
+2026-07-11 07:12:05 - train - INFO - Epoch 119/200 | Time:  5.68s | Loss: 0.1556
+2026-07-11 07:12:21 - train - INFO - Epoch 120/200 | Time:  5.71s | Loss: 0.1555 | nDCG: 0.3882 | UPD: 0.3044 | AD: 0.3287 | EE: 0.0532
+2026-07-11 07:12:21 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_120.pt
+2026-07-11 07:12:21 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:12:21 - train - INFO -   New best nDCG: 0.3882 (saved as best_model.pt)
+2026-07-11 07:12:27 - train - INFO - Epoch 121/200 | Time:  5.95s | Loss: 0.1550
+2026-07-11 07:12:32 - train - INFO - Epoch 122/200 | Time:  5.80s | Loss: 0.1548
+2026-07-11 07:12:38 - train - INFO - Epoch 123/200 | Time:  5.56s | Loss: 0.1534
+2026-07-11 07:12:44 - train - INFO - Epoch 124/200 | Time:  5.82s | Loss: 0.1532
+2026-07-11 07:12:50 - train - INFO - Epoch 125/200 | Time:  5.82s | Loss: 0.1519
+2026-07-11 07:12:55 - train - INFO - Epoch 126/200 | Time:  5.80s | Loss: 0.1519
+2026-07-11 07:13:01 - train - INFO - Epoch 127/200 | Time:  5.80s | Loss: 0.1516
+2026-07-11 07:13:07 - train - INFO - Epoch 128/200 | Time:  5.58s | Loss: 0.1506
+2026-07-11 07:13:13 - train - INFO - Epoch 129/200 | Time:  5.83s | Loss: 0.1496
+2026-07-11 07:13:28 - train - INFO - Epoch 130/200 | Time:  5.85s | Loss: 0.1491 | nDCG: 0.3934 | UPD: 0.3006 | AD: 0.3440 | EE: 0.0570
+2026-07-11 07:13:28 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_130.pt
+2026-07-11 07:13:28 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:13:28 - train - INFO -   New best nDCG: 0.3934 (saved as best_model.pt)
+2026-07-11 07:13:34 - train - INFO - Epoch 131/200 | Time:  5.81s | Loss: 0.1485
+2026-07-11 07:13:40 - train - INFO - Epoch 132/200 | Time:  5.76s | Loss: 0.1488
+2026-07-11 07:13:45 - train - INFO - Epoch 133/200 | Time:  5.60s | Loss: 0.1477
+2026-07-11 07:13:51 - train - INFO - Epoch 134/200 | Time:  5.78s | Loss: 0.1462
+2026-07-11 07:13:57 - train - INFO - Epoch 135/200 | Time:  5.75s | Loss: 0.1466
+2026-07-11 07:14:03 - train - INFO - Epoch 136/200 | Time:  5.79s | Loss: 0.1456
+2026-07-11 07:14:09 - train - INFO - Epoch 137/200 | Time:  5.90s | Loss: 0.1451
+2026-07-11 07:14:14 - train - INFO - Epoch 138/200 | Time:  5.74s | Loss: 0.1452
+2026-07-11 07:14:20 - train - INFO - Epoch 139/200 | Time:  5.81s | Loss: 0.1441
+2026-07-11 07:14:36 - train - INFO - Epoch 140/200 | Time:  5.81s | Loss: 0.1434 | nDCG: 0.3992 | UPD: 0.2967 | AD: 0.3557 | EE: 0.0602
+2026-07-11 07:14:36 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_140.pt
+2026-07-11 07:14:36 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:14:36 - train - INFO -   New best nDCG: 0.3992 (saved as best_model.pt)
+2026-07-11 07:14:42 - train - INFO - Epoch 141/200 | Time:  5.76s | Loss: 0.1426
+2026-07-11 07:14:47 - train - INFO - Epoch 142/200 | Time:  5.68s | Loss: 0.1423
+2026-07-11 07:14:53 - train - INFO - Epoch 143/200 | Time:  5.57s | Loss: 0.1415
+2026-07-11 07:14:59 - train - INFO - Epoch 144/200 | Time:  5.81s | Loss: 0.1416
+2026-07-11 07:15:04 - train - INFO - Epoch 145/200 | Time:  5.82s | Loss: 0.1410
+2026-07-11 07:15:10 - train - INFO - Epoch 146/200 | Time:  5.80s | Loss: 0.1400
+2026-07-11 07:15:16 - train - INFO - Epoch 147/200 | Time:  5.73s | Loss: 0.1391
+2026-07-11 07:15:21 - train - INFO - Epoch 148/200 | Time:  5.50s | Loss: 0.1387
+2026-07-11 07:15:27 - train - INFO - Epoch 149/200 | Time:  5.82s | Loss: 0.1380
+2026-07-11 07:15:43 - train - INFO - Epoch 150/200 | Time:  5.73s | Loss: 0.1378 | nDCG: 0.4030 | UPD: 0.2938 | AD: 0.3683 | EE: 0.0631
+2026-07-11 07:15:43 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_150.pt
+2026-07-11 07:15:43 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:15:43 - train - INFO -   New best nDCG: 0.4030 (saved as best_model.pt)
+2026-07-11 07:15:48 - train - INFO - Epoch 151/200 | Time:  5.78s | Loss: 0.1375
+2026-07-11 07:15:54 - train - INFO - Epoch 152/200 | Time:  5.81s | Loss: 0.1369
+2026-07-11 07:16:00 - train - INFO - Epoch 153/200 | Time:  5.88s | Loss: 0.1356
+2026-07-11 07:16:06 - train - INFO - Epoch 154/200 | Time:  5.54s | Loss: 0.1352
+2026-07-11 07:16:11 - train - INFO - Epoch 155/200 | Time:  5.79s | Loss: 0.1344
+2026-07-11 07:16:17 - train - INFO - Epoch 156/200 | Time:  5.68s | Loss: 0.1344
+2026-07-11 07:16:23 - train - INFO - Epoch 157/200 | Time:  5.77s | Loss: 0.1339
+2026-07-11 07:16:29 - train - INFO - Epoch 158/200 | Time:  5.58s | Loss: 0.1334
+2026-07-11 07:16:34 - train - INFO - Epoch 159/200 | Time:  5.73s | Loss: 0.1329
+2026-07-11 07:16:50 - train - INFO - Epoch 160/200 | Time:  5.80s | Loss: 0.1326 | nDCG: 0.4069 | UPD: 0.2907 | AD: 0.3817 | EE: 0.0663
+2026-07-11 07:16:50 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_160.pt
+2026-07-11 07:16:50 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:16:50 - train - INFO -   New best nDCG: 0.4069 (saved as best_model.pt)
+2026-07-11 07:16:56 - train - INFO - Epoch 161/200 | Time:  6.00s | Loss: 0.1316
+2026-07-11 07:17:02 - train - INFO - Epoch 162/200 | Time:  5.87s | Loss: 0.1309
+2026-07-11 07:17:08 - train - INFO - Epoch 163/200 | Time:  5.76s | Loss: 0.1304
+2026-07-11 07:17:13 - train - INFO - Epoch 164/200 | Time:  5.68s | Loss: 0.1303
+2026-07-11 07:17:19 - train - INFO - Epoch 165/200 | Time:  6.16s | Loss: 0.1294
+2026-07-11 07:17:25 - train - INFO - Epoch 166/200 | Time:  5.79s | Loss: 0.1292
+2026-07-11 07:17:31 - train - INFO - Epoch 167/200 | Time:  5.87s | Loss: 0.1292
+2026-07-11 07:17:37 - train - INFO - Epoch 168/200 | Time:  5.82s | Loss: 0.1278
+2026-07-11 07:17:42 - train - INFO - Epoch 169/200 | Time:  5.59s | Loss: 0.1277
+2026-07-11 07:17:58 - train - INFO - Epoch 170/200 | Time:  5.81s | Loss: 0.1272 | nDCG: 0.4100 | UPD: 0.2877 | AD: 0.3931 | EE: 0.0690
+2026-07-11 07:17:58 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_170.pt
+2026-07-11 07:17:58 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:17:58 - train - INFO -   New best nDCG: 0.4100 (saved as best_model.pt)
+2026-07-11 07:18:04 - train - INFO - Epoch 171/200 | Time:  5.83s | Loss: 0.1265
+2026-07-11 07:18:10 - train - INFO - Epoch 172/200 | Time:  5.89s | Loss: 0.1265
+2026-07-11 07:18:16 - train - INFO - Epoch 173/200 | Time:  5.82s | Loss: 0.1251
+2026-07-11 07:18:21 - train - INFO - Epoch 174/200 | Time:  5.68s | Loss: 0.1246
+2026-07-11 07:18:27 - train - INFO - Epoch 175/200 | Time:  5.78s | Loss: 0.1246
+2026-07-11 07:18:33 - train - INFO - Epoch 176/200 | Time:  5.88s | Loss: 0.1240
+2026-07-11 07:18:39 - train - INFO - Epoch 177/200 | Time:  5.86s | Loss: 0.1237
+2026-07-11 07:18:45 - train - INFO - Epoch 178/200 | Time:  5.89s | Loss: 0.1226
+2026-07-11 07:18:50 - train - INFO - Epoch 179/200 | Time:  5.66s | Loss: 0.1223
+2026-07-11 07:19:06 - train - INFO - Epoch 180/200 | Time:  5.78s | Loss: 0.1225 | nDCG: 0.4139 | UPD: 0.2835 | AD: 0.4052 | EE: 0.0720
+2026-07-11 07:19:06 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_180.pt
+2026-07-11 07:19:06 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:19:06 - train - INFO -   New best nDCG: 0.4139 (saved as best_model.pt)
+2026-07-11 07:19:12 - train - INFO - Epoch 181/200 | Time:  5.85s | Loss: 0.1211
+2026-07-11 07:19:17 - train - INFO - Epoch 182/200 | Time:  5.78s | Loss: 0.1208
+2026-07-11 07:19:23 - train - INFO - Epoch 183/200 | Time:  5.91s | Loss: 0.1199
+2026-07-11 07:19:29 - train - INFO - Epoch 184/200 | Time:  5.86s | Loss: 0.1202
+2026-07-11 07:19:35 - train - INFO - Epoch 185/200 | Time:  5.79s | Loss: 0.1198
+2026-07-11 07:19:41 - train - INFO - Epoch 186/200 | Time:  5.88s | Loss: 0.1185
+2026-07-11 07:19:47 - train - INFO - Epoch 187/200 | Time:  5.73s | Loss: 0.1192
+2026-07-11 07:19:52 - train - INFO - Epoch 188/200 | Time:  5.81s | Loss: 0.1182
+2026-07-11 07:19:58 - train - INFO - Epoch 189/200 | Time:  5.62s | Loss: 0.1182
+2026-07-11 07:20:13 - train - INFO - Epoch 190/200 | Time:  5.81s | Loss: 0.1170 | nDCG: 0.4170 | UPD: 0.2808 | AD: 0.4122 | EE: 0.0745
+2026-07-11 07:20:13 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_190.pt
+2026-07-11 07:20:14 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:20:14 - train - INFO -   New best nDCG: 0.4170 (saved as best_model.pt)
+2026-07-11 07:20:19 - train - INFO - Epoch 191/200 | Time:  5.83s | Loss: 0.1165
+2026-07-11 07:20:25 - train - INFO - Epoch 192/200 | Time:  5.71s | Loss: 0.1161
+2026-07-11 07:20:31 - train - INFO - Epoch 193/200 | Time:  5.83s | Loss: 0.1157
+2026-07-11 07:20:36 - train - INFO - Epoch 194/200 | Time:  5.46s | Loss: 0.1153
+2026-07-11 07:20:42 - train - INFO - Epoch 195/200 | Time:  5.74s | Loss: 0.1144
+2026-07-11 07:20:48 - train - INFO - Epoch 196/200 | Time:  5.68s | Loss: 0.1143
+2026-07-11 07:20:54 - train - INFO - Epoch 197/200 | Time:  5.79s | Loss: 0.1137
+2026-07-11 07:20:59 - train - INFO - Epoch 198/200 | Time:  5.84s | Loss: 0.1134
+2026-07-11 07:21:05 - train - INFO - Epoch 199/200 | Time:  5.55s | Loss: 0.1128
+2026-07-11 07:21:20 - train - INFO - Epoch 200/200 | Time:  5.82s | Loss: 0.1128 | nDCG: 0.4194 | UPD: 0.2785 | AD: 0.4198 | EE: 0.0776
+2026-07-11 07:21:21 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_200.pt
+2026-07-11 07:21:21 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 07:21:21 - train - INFO -   New best nDCG: 0.4194 (saved as best_model.pt)
+2026-07-11 07:21:21 - train - INFO - Training completed in 1146.44s (19.11min)
+2026-07-11 07:21:21 - train - INFO - Best model: epoch 200, nDCG=0.4194
+2026-07-11 07:21:21 - train - INFO - ============================================================
+2026-07-11 07:21:21 - train - INFO - Training Complete!
+2026-07-11 07:21:21 - train - INFO - ============================================================
+2026-07-11 07:21:21 - train - INFO - Final Evaluation Metrics:
+2026-07-11 07:21:21 - train - INFO -   nDCG      : 0.4194
+2026-07-11 07:21:21 - train - INFO -   UPD       : 0.2785
+2026-07-11 07:21:21 - train - INFO -   AD        : 0.4198
+2026-07-11 07:21:21 - train - INFO -   EE        : 0.0776
+2026-07-11 08:45:05 - train - INFO - ============================================================
+2026-07-11 08:45:05 - train - INFO - ILE-BPR Training Started
+2026-07-11 08:45:05 - train - INFO - ============================================================
+2026-07-11 08:45:05 - train - INFO - Configuration: {'seed': 42, 'deterministic': True, 'dataset': {'name': 'movielens-1m', 'data_dir': './data', 'train_ratio': 0.8, 'min_interactions': 5}, 'model': {'name': 'ile_bpr', 'embedding_dim': 128, 'init_std': 0.01}, 'loss': {'name': 'bpr', 'distance': 'none', 'lambda_ile': 0.0, 'eps': 1e-08, 'reg_weight': 0.0001}, 'training': {'epochs': 200, 'batch_size': 1024, 'learning_rate': 0.0001, 'optimizer': 'adam', 'weight_decay': 0.0, 'num_negatives': 1, 'eval_freq': 10, 'save_freq': 10, 'early_stopping': {'enabled': True, 'patience': 20, 'metric': 'nDCG', 'mode': 'max', 'min_delta': 0.0}}, 'evaluation': {'top_k': 10, 'metrics': ['nDCG', 'UPD', 'AD', 'EE']}, 'logging': {'log_dir': './logs', 'checkpoint_dir': './checkpoints/bpr', 'use_tensorboard': True, 'log_interval': 100}, 'device': 'auto', 'distributed': False}
+2026-07-11 08:45:05 - train - INFO - Early stopping: ENABLED
+2026-07-11 08:45:05 - train - INFO -   Patience: 20
+2026-07-11 08:45:05 - train - INFO -   Metric: nDCG
+2026-07-11 08:45:05 - train - INFO -   Mode: max
+2026-07-11 08:45:05 - train - INFO - Loading dataset: movielens-1m
+2026-07-11 08:45:05 - train - INFO - Loading preprocessed dataset from ./data/movielens_1m_processed.pkl
+2026-07-11 08:45:05 - train - INFO - Dataset loaded: 6040 users, 3706 items
+2026-07-11 08:45:05 - train - INFO - Train: 797,758, Test: 202,451
+2026-07-11 08:45:06 - train - INFO - Model: BPRModel
+2026-07-11 08:45:06 - train - INFO - Parameters: 1,247,488
+2026-07-11 08:45:06 - train - INFO - Embedding dim: 128
+2026-07-11 08:45:07 - train - INFO - Starting training...
+2026-07-11 08:45:07 - train - INFO - Starting training for 200 epochs
+2026-07-11 08:45:07 - train - INFO - Model: BPRModel
+2026-07-11 08:45:07 - train - INFO - Dataset: movielens-1m
+2026-07-11 08:45:07 - train - INFO - Users: 6040, Items: 3706
+2026-07-11 08:45:07 - train - INFO - Train interactions: 797,758
+2026-07-11 08:45:07 - train - INFO - Use ILE: False
+2026-07-11 08:45:07 - train - INFO - Batches per epoch: 780
+2026-07-11 08:45:23 - train - INFO - Epoch   1/200 | Time:  5.79s | Loss: 0.6929 | nDCG: 0.1383 | UPD: 0.2980 | AD: 0.8087 | EE: 0.1060
+2026-07-11 08:45:23 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:45:23 - train - INFO -   New best nDCG: 0.1383 (saved as best_model.pt)
+2026-07-11 08:45:29 - train - INFO - Epoch   2/200 | Time:  5.42s | Loss: 0.6527
+2026-07-11 08:45:34 - train - INFO - Epoch   3/200 | Time:  5.64s | Loss: 0.4887
+2026-07-11 08:45:40 - train - INFO - Epoch   4/200 | Time:  5.61s | Loss: 0.3914
+2026-07-11 08:45:46 - train - INFO - Epoch   5/200 | Time:  5.61s | Loss: 0.3563
+2026-07-11 08:45:51 - train - INFO - Epoch   6/200 | Time:  5.66s | Loss: 0.3418
+2026-07-11 08:45:57 - train - INFO - Epoch   7/200 | Time:  5.39s | Loss: 0.3328
+2026-07-11 08:46:02 - train - INFO - Epoch   8/200 | Time:  5.63s | Loss: 0.3260
+2026-07-11 08:46:08 - train - INFO - Epoch   9/200 | Time:  5.56s | Loss: 0.3208
+2026-07-11 08:46:24 - train - INFO - Epoch  10/200 | Time:  5.62s | Loss: 0.3169 | nDCG: 0.2124 | UPD: 0.3253 | AD: 0.0305 | EE: 0.0042
+2026-07-11 08:46:24 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_10.pt
+2026-07-11 08:46:24 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:46:24 - train - INFO -   New best nDCG: 0.2124 (saved as best_model.pt)
+2026-07-11 08:46:30 - train - INFO - Epoch  11/200 | Time:  5.63s | Loss: 0.3131
+2026-07-11 08:46:35 - train - INFO - Epoch  12/200 | Time:  5.35s | Loss: 0.3092
+2026-07-11 08:46:40 - train - INFO - Epoch  13/200 | Time:  5.58s | Loss: 0.3061
+2026-07-11 08:46:46 - train - INFO - Epoch  14/200 | Time:  5.58s | Loss: 0.3028
+2026-07-11 08:46:52 - train - INFO - Epoch  15/200 | Time:  5.61s | Loss: 0.2990
+2026-07-11 08:46:57 - train - INFO - Epoch  16/200 | Time:  5.58s | Loss: 0.2946
+2026-07-11 08:47:03 - train - INFO - Epoch  17/200 | Time:  5.45s | Loss: 0.2916
+2026-07-11 08:47:08 - train - INFO - Epoch  18/200 | Time:  5.60s | Loss: 0.2875
+2026-07-11 08:47:14 - train - INFO - Epoch  19/200 | Time:  5.64s | Loss: 0.2839
+2026-07-11 08:47:30 - train - INFO - Epoch  20/200 | Time:  5.72s | Loss: 0.2797 | nDCG: 0.2345 | UPD: 0.3252 | AD: 0.0505 | EE: 0.0052
+2026-07-11 08:47:30 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_20.pt
+2026-07-11 08:47:30 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:47:30 - train - INFO -   New best nDCG: 0.2345 (saved as best_model.pt)
+2026-07-11 08:47:36 - train - INFO - Epoch  21/200 | Time:  5.64s | Loss: 0.2760
+2026-07-11 08:47:41 - train - INFO - Epoch  22/200 | Time:  5.40s | Loss: 0.2730
+2026-07-11 08:47:47 - train - INFO - Epoch  23/200 | Time:  5.58s | Loss: 0.2695
+2026-07-11 08:47:52 - train - INFO - Epoch  24/200 | Time:  5.63s | Loss: 0.2667
+2026-07-11 08:47:58 - train - INFO - Epoch  25/200 | Time:  5.60s | Loss: 0.2629
+2026-07-11 08:48:04 - train - INFO - Epoch  26/200 | Time:  5.71s | Loss: 0.2608
+2026-07-11 08:48:09 - train - INFO - Epoch  27/200 | Time:  5.39s | Loss: 0.2562
+2026-07-11 08:48:15 - train - INFO - Epoch  28/200 | Time:  5.64s | Loss: 0.2538
+2026-07-11 08:48:20 - train - INFO - Epoch  29/200 | Time:  5.62s | Loss: 0.2504
+2026-07-11 08:48:36 - train - INFO - Epoch  30/200 | Time:  5.61s | Loss: 0.2481 | nDCG: 0.2669 | UPD: 0.3248 | AD: 0.0836 | EE: 0.0081
+2026-07-11 08:48:36 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_30.pt
+2026-07-11 08:48:36 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:48:36 - train - INFO -   New best nDCG: 0.2669 (saved as best_model.pt)
+2026-07-11 08:48:42 - train - INFO - Epoch  31/200 | Time:  5.60s | Loss: 0.2449
+2026-07-11 08:48:47 - train - INFO - Epoch  32/200 | Time:  5.42s | Loss: 0.2421
+2026-07-11 08:48:53 - train - INFO - Epoch  33/200 | Time:  5.62s | Loss: 0.2406
+2026-07-11 08:48:59 - train - INFO - Epoch  34/200 | Time:  5.62s | Loss: 0.2375
+2026-07-11 08:49:04 - train - INFO - Epoch  35/200 | Time:  5.66s | Loss: 0.2358
+2026-07-11 08:49:10 - train - INFO - Epoch  36/200 | Time:  5.65s | Loss: 0.2321
+2026-07-11 08:49:15 - train - INFO - Epoch  37/200 | Time:  5.62s | Loss: 0.2295
+2026-07-11 08:49:21 - train - INFO - Epoch  38/200 | Time:  5.41s | Loss: 0.2284
+2026-07-11 08:49:27 - train - INFO - Epoch  39/200 | Time:  5.63s | Loss: 0.2253
+2026-07-11 08:49:42 - train - INFO - Epoch  40/200 | Time:  5.62s | Loss: 0.2238 | nDCG: 0.2941 | UPD: 0.3230 | AD: 0.1295 | EE: 0.0124
+2026-07-11 08:49:42 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_40.pt
+2026-07-11 08:49:43 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:49:43 - train - INFO -   New best nDCG: 0.2941 (saved as best_model.pt)
+2026-07-11 08:49:48 - train - INFO - Epoch  41/200 | Time:  5.59s | Loss: 0.2200
+2026-07-11 08:49:54 - train - INFO - Epoch  42/200 | Time:  5.57s | Loss: 0.2184
+2026-07-11 08:49:59 - train - INFO - Epoch  43/200 | Time:  5.46s | Loss: 0.2163
+2026-07-11 08:50:05 - train - INFO - Epoch  44/200 | Time:  5.64s | Loss: 0.2151
+2026-07-11 08:50:10 - train - INFO - Epoch  45/200 | Time:  5.64s | Loss: 0.2120
+2026-07-11 08:50:16 - train - INFO - Epoch  46/200 | Time:  5.70s | Loss: 0.2109
+2026-07-11 08:50:22 - train - INFO - Epoch  47/200 | Time:  5.64s | Loss: 0.2095
+2026-07-11 08:50:27 - train - INFO - Epoch  48/200 | Time:  5.44s | Loss: 0.2072
+2026-07-11 08:50:33 - train - INFO - Epoch  49/200 | Time:  5.65s | Loss: 0.2057
+2026-07-11 08:50:49 - train - INFO - Epoch  50/200 | Time:  5.63s | Loss: 0.2058 | nDCG: 0.3147 | UPD: 0.3202 | AD: 0.1678 | EE: 0.0175
+2026-07-11 08:50:49 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_50.pt
+2026-07-11 08:50:49 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:50:49 - train - INFO -   New best nDCG: 0.3147 (saved as best_model.pt)
+2026-07-11 08:50:55 - train - INFO - Epoch  51/200 | Time:  5.71s | Loss: 0.2030
+2026-07-11 08:51:00 - train - INFO - Epoch  52/200 | Time:  5.77s | Loss: 0.2011
+2026-07-11 08:51:06 - train - INFO - Epoch  53/200 | Time:  5.43s | Loss: 0.2007
+2026-07-11 08:51:12 - train - INFO - Epoch  54/200 | Time:  5.67s | Loss: 0.2004
+2026-07-11 08:51:17 - train - INFO - Epoch  55/200 | Time:  5.71s | Loss: 0.1972
+2026-07-11 08:51:23 - train - INFO - Epoch  56/200 | Time:  5.78s | Loss: 0.1960
+2026-07-11 08:51:29 - train - INFO - Epoch  57/200 | Time:  5.63s | Loss: 0.1955
+2026-07-11 08:51:34 - train - INFO - Epoch  58/200 | Time:  5.44s | Loss: 0.1939
+2026-07-11 08:51:40 - train - INFO - Epoch  59/200 | Time:  5.66s | Loss: 0.1929
+2026-07-11 08:51:56 - train - INFO - Epoch  60/200 | Time:  5.63s | Loss: 0.1911 | nDCG: 0.3318 | UPD: 0.3164 | AD: 0.1975 | EE: 0.0227
+2026-07-11 08:51:56 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_60.pt
+2026-07-11 08:51:56 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:51:56 - train - INFO -   New best nDCG: 0.3318 (saved as best_model.pt)
+2026-07-11 08:52:01 - train - INFO - Epoch  61/200 | Time:  5.71s | Loss: 0.1903
+2026-07-11 08:52:07 - train - INFO - Epoch  62/200 | Time:  5.59s | Loss: 0.1892
+2026-07-11 08:52:13 - train - INFO - Epoch  63/200 | Time:  5.45s | Loss: 0.1879
+2026-07-11 08:52:18 - train - INFO - Epoch  64/200 | Time:  5.68s | Loss: 0.1860
+2026-07-11 08:52:24 - train - INFO - Epoch  65/200 | Time:  5.74s | Loss: 0.1851
+2026-07-11 08:52:30 - train - INFO - Epoch  66/200 | Time:  5.84s | Loss: 0.1850
+2026-07-11 08:52:36 - train - INFO - Epoch  67/200 | Time:  5.73s | Loss: 0.1838
+2026-07-11 08:52:41 - train - INFO - Epoch  68/200 | Time:  5.54s | Loss: 0.1828
+2026-07-11 08:52:47 - train - INFO - Epoch  69/200 | Time:  5.62s | Loss: 0.1818
+2026-07-11 08:53:03 - train - INFO - Epoch  70/200 | Time:  5.66s | Loss: 0.1816 | nDCG: 0.3442 | UPD: 0.3131 | AD: 0.2191 | EE: 0.0278
+2026-07-11 08:53:03 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_70.pt
+2026-07-11 08:53:03 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:53:03 - train - INFO -   New best nDCG: 0.3442 (saved as best_model.pt)
+2026-07-11 08:53:08 - train - INFO - Epoch  71/200 | Time:  5.65s | Loss: 0.1791
+2026-07-11 08:53:14 - train - INFO - Epoch  72/200 | Time:  5.70s | Loss: 0.1789
+2026-07-11 08:53:20 - train - INFO - Epoch  73/200 | Time:  5.51s | Loss: 0.1781
+2026-07-11 08:53:25 - train - INFO - Epoch  74/200 | Time:  5.69s | Loss: 0.1769
+2026-07-11 08:53:31 - train - INFO - Epoch  75/200 | Time:  5.78s | Loss: 0.1758
+2026-07-11 08:53:37 - train - INFO - Epoch  76/200 | Time:  5.66s | Loss: 0.1751
+2026-07-11 08:53:43 - train - INFO - Epoch  77/200 | Time:  5.72s | Loss: 0.1737
+2026-07-11 08:53:48 - train - INFO - Epoch  78/200 | Time:  5.48s | Loss: 0.1739
+2026-07-11 08:53:54 - train - INFO - Epoch  79/200 | Time:  5.63s | Loss: 0.1728
+2026-07-11 08:54:10 - train - INFO - Epoch  80/200 | Time:  5.77s | Loss: 0.1717 | nDCG: 0.3562 | UPD: 0.3088 | AD: 0.2396 | EE: 0.0329
+2026-07-11 08:54:10 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_80.pt
+2026-07-11 08:54:10 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:54:10 - train - INFO -   New best nDCG: 0.3562 (saved as best_model.pt)
+2026-07-11 08:54:16 - train - INFO - Epoch  81/200 | Time:  5.70s | Loss: 0.1710
+2026-07-11 08:54:21 - train - INFO - Epoch  82/200 | Time:  5.68s | Loss: 0.1706
+2026-07-11 08:54:27 - train - INFO - Epoch  83/200 | Time:  5.51s | Loss: 0.1691
+2026-07-11 08:54:33 - train - INFO - Epoch  84/200 | Time:  5.75s | Loss: 0.1683
+2026-07-11 08:54:38 - train - INFO - Epoch  85/200 | Time:  5.65s | Loss: 0.1677
+2026-07-11 08:54:44 - train - INFO - Epoch  86/200 | Time:  5.68s | Loss: 0.1671
+2026-07-11 08:54:50 - train - INFO - Epoch  87/200 | Time:  5.66s | Loss: 0.1666
+2026-07-11 08:54:55 - train - INFO - Epoch  88/200 | Time:  5.46s | Loss: 0.1663
+2026-07-11 08:55:01 - train - INFO - Epoch  89/200 | Time:  5.69s | Loss: 0.1649
+2026-07-11 08:55:17 - train - INFO - Epoch  90/200 | Time:  5.65s | Loss: 0.1648 | nDCG: 0.3649 | UPD: 0.3048 | AD: 0.2569 | EE: 0.0371
+2026-07-11 08:55:17 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_90.pt
+2026-07-11 08:55:17 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:55:17 - train - INFO -   New best nDCG: 0.3649 (saved as best_model.pt)
+2026-07-11 08:55:23 - train - INFO - Epoch  91/200 | Time:  5.69s | Loss: 0.1645
+2026-07-11 08:55:28 - train - INFO - Epoch  92/200 | Time:  5.80s | Loss: 0.1626
+2026-07-11 08:55:34 - train - INFO - Epoch  93/200 | Time:  5.47s | Loss: 0.1626
+2026-07-11 08:55:39 - train - INFO - Epoch  94/200 | Time:  5.70s | Loss: 0.1623
+2026-07-11 08:55:45 - train - INFO - Epoch  95/200 | Time:  5.67s | Loss: 0.1617
+2026-07-11 08:55:51 - train - INFO - Epoch  96/200 | Time:  5.70s | Loss: 0.1608
+2026-07-11 08:55:57 - train - INFO - Epoch  97/200 | Time:  5.67s | Loss: 0.1601
+2026-07-11 08:56:02 - train - INFO - Epoch  98/200 | Time:  5.51s | Loss: 0.1591
+2026-07-11 08:56:08 - train - INFO - Epoch  99/200 | Time:  5.68s | Loss: 0.1585
+2026-07-11 08:56:24 - train - INFO - Epoch 100/200 | Time:  5.68s | Loss: 0.1584 | nDCG: 0.3721 | UPD: 0.3020 | AD: 0.2760 | EE: 0.0410
+2026-07-11 08:56:24 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_100.pt
+2026-07-11 08:56:24 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:56:24 - train - INFO -   New best nDCG: 0.3721 (saved as best_model.pt)
+2026-07-11 08:56:29 - train - INFO - Epoch 101/200 | Time:  5.62s | Loss: 0.1571
+2026-07-11 08:56:35 - train - INFO - Epoch 102/200 | Time:  5.62s | Loss: 0.1569
+2026-07-11 08:56:41 - train - INFO - Epoch 103/200 | Time:  5.47s | Loss: 0.1556
+2026-07-11 08:56:46 - train - INFO - Epoch 104/200 | Time:  5.63s | Loss: 0.1552
+2026-07-11 08:56:52 - train - INFO - Epoch 105/200 | Time:  5.72s | Loss: 0.1551
+2026-07-11 08:56:58 - train - INFO - Epoch 106/200 | Time:  5.75s | Loss: 0.1541
+2026-07-11 08:57:03 - train - INFO - Epoch 107/200 | Time:  5.70s | Loss: 0.1542
+2026-07-11 08:57:09 - train - INFO - Epoch 108/200 | Time:  5.50s | Loss: 0.1526
+2026-07-11 08:57:15 - train - INFO - Epoch 109/200 | Time:  5.65s | Loss: 0.1524
+2026-07-11 08:57:31 - train - INFO - Epoch 110/200 | Time:  5.75s | Loss: 0.1517 | nDCG: 0.3793 | UPD: 0.2977 | AD: 0.2871 | EE: 0.0451
+2026-07-11 08:57:31 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_110.pt
+2026-07-11 08:57:31 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:57:31 - train - INFO -   New best nDCG: 0.3793 (saved as best_model.pt)
+2026-07-11 08:57:36 - train - INFO - Epoch 111/200 | Time:  5.67s | Loss: 0.1513
+2026-07-11 08:57:42 - train - INFO - Epoch 112/200 | Time:  5.87s | Loss: 0.1507
+2026-07-11 08:57:48 - train - INFO - Epoch 113/200 | Time:  5.75s | Loss: 0.1501
+2026-07-11 08:57:54 - train - INFO - Epoch 114/200 | Time:  5.64s | Loss: 0.1494
+2026-07-11 08:57:59 - train - INFO - Epoch 115/200 | Time:  5.76s | Loss: 0.1489
+2026-07-11 08:58:05 - train - INFO - Epoch 116/200 | Time:  5.66s | Loss: 0.1486
+2026-07-11 08:58:11 - train - INFO - Epoch 117/200 | Time:  5.71s | Loss: 0.1479
+2026-07-11 08:58:16 - train - INFO - Epoch 118/200 | Time:  5.63s | Loss: 0.1467
+2026-07-11 08:58:22 - train - INFO - Epoch 119/200 | Time:  5.51s | Loss: 0.1469
+2026-07-11 08:58:38 - train - INFO - Epoch 120/200 | Time:  5.70s | Loss: 0.1460 | nDCG: 0.3854 | UPD: 0.2950 | AD: 0.2971 | EE: 0.0479
+2026-07-11 08:58:38 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_120.pt
+2026-07-11 08:58:38 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:58:38 - train - INFO -   New best nDCG: 0.3854 (saved as best_model.pt)
+2026-07-11 08:58:44 - train - INFO - Epoch 121/200 | Time:  5.71s | Loss: 0.1457
+2026-07-11 08:58:49 - train - INFO - Epoch 122/200 | Time:  5.65s | Loss: 0.1449
+2026-07-11 08:58:55 - train - INFO - Epoch 123/200 | Time:  5.64s | Loss: 0.1447
+2026-07-11 08:59:01 - train - INFO - Epoch 124/200 | Time:  5.58s | Loss: 0.1435
+2026-07-11 08:59:06 - train - INFO - Epoch 125/200 | Time:  5.68s | Loss: 0.1432
+2026-07-11 08:59:12 - train - INFO - Epoch 126/200 | Time:  5.70s | Loss: 0.1427
+2026-07-11 08:59:18 - train - INFO - Epoch 127/200 | Time:  5.69s | Loss: 0.1419
+2026-07-11 08:59:23 - train - INFO - Epoch 128/200 | Time:  5.66s | Loss: 0.1413
+2026-07-11 08:59:29 - train - INFO - Epoch 129/200 | Time:  5.53s | Loss: 0.1416
+2026-07-11 08:59:45 - train - INFO - Epoch 130/200 | Time:  5.70s | Loss: 0.1409 | nDCG: 0.3911 | UPD: 0.2927 | AD: 0.3122 | EE: 0.0507
+2026-07-11 08:59:45 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_130.pt
+2026-07-11 08:59:45 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 08:59:45 - train - INFO -   New best nDCG: 0.3911 (saved as best_model.pt)
+2026-07-11 08:59:51 - train - INFO - Epoch 131/200 | Time:  5.65s | Loss: 0.1400
+2026-07-11 08:59:56 - train - INFO - Epoch 132/200 | Time:  5.63s | Loss: 0.1396
+2026-07-11 09:00:02 - train - INFO - Epoch 133/200 | Time:  5.72s | Loss: 0.1390
+2026-07-11 09:00:08 - train - INFO - Epoch 134/200 | Time:  5.46s | Loss: 0.1385
+2026-07-11 09:00:13 - train - INFO - Epoch 135/200 | Time:  5.71s | Loss: 0.1383
+2026-07-11 09:00:19 - train - INFO - Epoch 136/200 | Time:  5.69s | Loss: 0.1382
+2026-07-11 09:00:25 - train - INFO - Epoch 137/200 | Time:  5.67s | Loss: 0.1373
+2026-07-11 09:00:30 - train - INFO - Epoch 138/200 | Time:  5.76s | Loss: 0.1360
+2026-07-11 09:00:36 - train - INFO - Epoch 139/200 | Time:  5.51s | Loss: 0.1359
+2026-07-11 09:00:52 - train - INFO - Epoch 140/200 | Time:  5.75s | Loss: 0.1353 | nDCG: 0.3955 | UPD: 0.2898 | AD: 0.3206 | EE: 0.0536
+2026-07-11 09:00:52 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_140.pt
+2026-07-11 09:00:52 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:00:52 - train - INFO -   New best nDCG: 0.3955 (saved as best_model.pt)
+2026-07-11 09:00:58 - train - INFO - Epoch 141/200 | Time:  5.68s | Loss: 0.1346
+2026-07-11 09:01:04 - train - INFO - Epoch 142/200 | Time:  5.76s | Loss: 0.1346
+2026-07-11 09:01:09 - train - INFO - Epoch 143/200 | Time:  5.75s | Loss: 0.1342
+2026-07-11 09:01:15 - train - INFO - Epoch 144/200 | Time:  5.57s | Loss: 0.1329
+2026-07-11 09:01:21 - train - INFO - Epoch 145/200 | Time:  5.72s | Loss: 0.1330
+2026-07-11 09:01:26 - train - INFO - Epoch 146/200 | Time:  5.65s | Loss: 0.1319
+2026-07-11 09:01:32 - train - INFO - Epoch 147/200 | Time:  5.72s | Loss: 0.1318
+2026-07-11 09:01:38 - train - INFO - Epoch 148/200 | Time:  5.66s | Loss: 0.1307
+2026-07-11 09:01:43 - train - INFO - Epoch 149/200 | Time:  5.56s | Loss: 0.1300
+2026-07-11 09:01:59 - train - INFO - Epoch 150/200 | Time:  5.75s | Loss: 0.1296 | nDCG: 0.4008 | UPD: 0.2863 | AD: 0.3319 | EE: 0.0566
+2026-07-11 09:01:59 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_150.pt
+2026-07-11 09:01:59 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:01:59 - train - INFO -   New best nDCG: 0.4008 (saved as best_model.pt)
+2026-07-11 09:02:05 - train - INFO - Epoch 151/200 | Time:  5.75s | Loss: 0.1297
+2026-07-11 09:02:11 - train - INFO - Epoch 152/200 | Time:  5.77s | Loss: 0.1297
+2026-07-11 09:02:17 - train - INFO - Epoch 153/200 | Time:  5.77s | Loss: 0.1285
+2026-07-11 09:02:22 - train - INFO - Epoch 154/200 | Time:  5.53s | Loss: 0.1286
+2026-07-11 09:02:28 - train - INFO - Epoch 155/200 | Time:  5.60s | Loss: 0.1272
+2026-07-11 09:02:34 - train - INFO - Epoch 156/200 | Time:  5.70s | Loss: 0.1273
+2026-07-11 09:02:39 - train - INFO - Epoch 157/200 | Time:  5.76s | Loss: 0.1268
+2026-07-11 09:02:45 - train - INFO - Epoch 158/200 | Time:  5.66s | Loss: 0.1267
+2026-07-11 09:02:51 - train - INFO - Epoch 159/200 | Time:  5.59s | Loss: 0.1256
+2026-07-11 09:03:07 - train - INFO - Epoch 160/200 | Time:  5.80s | Loss: 0.1251 | nDCG: 0.4045 | UPD: 0.2841 | AD: 0.3448 | EE: 0.0594
+2026-07-11 09:03:07 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_160.pt
+2026-07-11 09:03:07 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:03:07 - train - INFO -   New best nDCG: 0.4045 (saved as best_model.pt)
+2026-07-11 09:03:13 - train - INFO - Epoch 161/200 | Time:  5.73s | Loss: 0.1251
+2026-07-11 09:03:18 - train - INFO - Epoch 162/200 | Time:  5.67s | Loss: 0.1239
+2026-07-11 09:03:24 - train - INFO - Epoch 163/200 | Time:  5.70s | Loss: 0.1236
+2026-07-11 09:03:30 - train - INFO - Epoch 164/200 | Time:  5.53s | Loss: 0.1236
+2026-07-11 09:03:35 - train - INFO - Epoch 165/200 | Time:  5.73s | Loss: 0.1227
+2026-07-11 09:03:41 - train - INFO - Epoch 166/200 | Time:  5.72s | Loss: 0.1224
+2026-07-11 09:03:47 - train - INFO - Epoch 167/200 | Time:  5.69s | Loss: 0.1223
+2026-07-11 09:03:52 - train - INFO - Epoch 168/200 | Time:  5.70s | Loss: 0.1218
+2026-07-11 09:03:58 - train - INFO - Epoch 169/200 | Time:  5.54s | Loss: 0.1210
+2026-07-11 09:04:14 - train - INFO - Epoch 170/200 | Time:  5.78s | Loss: 0.1210 | nDCG: 0.4085 | UPD: 0.2819 | AD: 0.3511 | EE: 0.0613
+2026-07-11 09:04:14 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_170.pt
+2026-07-11 09:04:14 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:04:14 - train - INFO -   New best nDCG: 0.4085 (saved as best_model.pt)
+2026-07-11 09:04:20 - train - INFO - Epoch 171/200 | Time:  5.72s | Loss: 0.1198
+2026-07-11 09:04:26 - train - INFO - Epoch 172/200 | Time:  5.70s | Loss: 0.1198
+2026-07-11 09:04:31 - train - INFO - Epoch 173/200 | Time:  5.85s | Loss: 0.1193
+2026-07-11 09:04:37 - train - INFO - Epoch 174/200 | Time:  5.53s | Loss: 0.1184
+2026-07-11 09:04:43 - train - INFO - Epoch 175/200 | Time:  5.78s | Loss: 0.1182
+2026-07-11 09:04:48 - train - INFO - Epoch 176/200 | Time:  5.58s | Loss: 0.1179
+2026-07-11 09:04:54 - train - INFO - Epoch 177/200 | Time:  5.73s | Loss: 0.1176
+2026-07-11 09:05:00 - train - INFO - Epoch 178/200 | Time:  5.74s | Loss: 0.1164
+2026-07-11 09:05:05 - train - INFO - Epoch 179/200 | Time:  5.65s | Loss: 0.1161
+2026-07-11 09:05:22 - train - INFO - Epoch 180/200 | Time:  5.84s | Loss: 0.1155 | nDCG: 0.4121 | UPD: 0.2789 | AD: 0.3640 | EE: 0.0638
+2026-07-11 09:05:22 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_180.pt
+2026-07-11 09:05:22 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:05:22 - train - INFO -   New best nDCG: 0.4121 (saved as best_model.pt)
+2026-07-11 09:05:28 - train - INFO - Epoch 181/200 | Time:  5.80s | Loss: 0.1162
+2026-07-11 09:05:34 - train - INFO - Epoch 182/200 | Time:  5.84s | Loss: 0.1149
+2026-07-11 09:05:39 - train - INFO - Epoch 183/200 | Time:  5.87s | Loss: 0.1141
+2026-07-11 09:05:45 - train - INFO - Epoch 184/200 | Time:  5.57s | Loss: 0.1138
+2026-07-11 09:05:51 - train - INFO - Epoch 185/200 | Time:  5.86s | Loss: 0.1138
+2026-07-11 09:05:57 - train - INFO - Epoch 186/200 | Time:  5.70s | Loss: 0.1128
+2026-07-11 09:06:03 - train - INFO - Epoch 187/200 | Time:  6.00s | Loss: 0.1130
+2026-07-11 09:06:08 - train - INFO - Epoch 188/200 | Time:  5.80s | Loss: 0.1125
+2026-07-11 09:06:14 - train - INFO - Epoch 189/200 | Time:  5.62s | Loss: 0.1114
+2026-07-11 09:06:30 - train - INFO - Epoch 190/200 | Time:  5.83s | Loss: 0.1115 | nDCG: 0.4154 | UPD: 0.2758 | AD: 0.3729 | EE: 0.0662
+2026-07-11 09:06:30 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_190.pt
+2026-07-11 09:06:30 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:06:30 - train - INFO -   New best nDCG: 0.4154 (saved as best_model.pt)
+2026-07-11 09:06:36 - train - INFO - Epoch 191/200 | Time:  5.72s | Loss: 0.1118
+2026-07-11 09:06:42 - train - INFO - Epoch 192/200 | Time:  5.84s | Loss: 0.1108
+2026-07-11 09:06:48 - train - INFO - Epoch 193/200 | Time:  5.81s | Loss: 0.1103
+2026-07-11 09:06:53 - train - INFO - Epoch 194/200 | Time:  5.57s | Loss: 0.1099
+2026-07-11 09:06:59 - train - INFO - Epoch 195/200 | Time:  5.77s | Loss: 0.1093
+2026-07-11 09:07:05 - train - INFO - Epoch 196/200 | Time:  5.75s | Loss: 0.1092
+2026-07-11 09:07:11 - train - INFO - Epoch 197/200 | Time:  5.81s | Loss: 0.1088
+2026-07-11 09:07:16 - train - INFO - Epoch 198/200 | Time:  5.88s | Loss: 0.1075
+2026-07-11 09:07:22 - train - INFO - Epoch 199/200 | Time:  5.62s | Loss: 0.1076
+2026-07-11 09:07:38 - train - INFO - Epoch 200/200 | Time:  5.81s | Loss: 0.1071 | nDCG: 0.4182 | UPD: 0.2739 | AD: 0.3788 | EE: 0.0681
+2026-07-11 09:07:38 - train - INFO - Checkpoint saved: ./checkpoints/bpr/checkpoint_epoch_200.pt
+2026-07-11 09:07:38 - train - INFO - Checkpoint saved: ./checkpoints/bpr/best_model.pt
+2026-07-11 09:07:38 - train - INFO -   New best nDCG: 0.4182 (saved as best_model.pt)
+2026-07-11 09:07:38 - train - INFO - Training completed in 1131.41s (18.86min)
+2026-07-11 09:07:38 - train - INFO - Best model: epoch 200, nDCG=0.4182
+2026-07-11 09:07:38 - train - INFO - ============================================================
+2026-07-11 09:07:38 - train - INFO - Training Complete!
+2026-07-11 09:07:38 - train - INFO - ============================================================
+2026-07-11 09:07:38 - train - INFO - Final Evaluation Metrics:
+2026-07-11 09:07:38 - train - INFO -   nDCG      : 0.4182
+2026-07-11 09:07:38 - train - INFO -   UPD       : 0.2739
+2026-07-11 09:07:38 - train - INFO -   AD        : 0.3788
+2026-07-11 09:07:38 - train - INFO -   EE        : 0.0681

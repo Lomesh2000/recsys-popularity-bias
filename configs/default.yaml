@@ -1,0 +1,64 @@
+# Default configuration for ILE-BPR experiments
+
+# Random seed
+seed: 42
+deterministic: true
+
+# Dataset
+dataset:
+  name: movielens-1m  # movielens-1m, goodreads, google-reviews
+  data_dir: ./data
+  train_ratio: 0.8
+  min_interactions: 5  # minimum interactions per user/item
+
+# Model
+model:
+  name: ile_bpr
+  embedding_dim: 128
+  init_std: 0.01
+
+# Loss
+loss:
+  name: ile  # bpr, ile
+  distance: std  # none, std, ent, mad
+  lambda_ile: 0.25  # weight for ILE term
+  eps: 1.0e-8  # numerical stability
+
+# Training
+training:
+  epochs: 200
+  batch_size: 1024
+  learning_rate: 0.0001
+  optimizer: adam
+  weight_decay: 0.0
+  num_negatives: 1
+  eval_freq: 10  # evaluate every N epochs
+  save_freq: 10  # save checkpoint every N epochs
+
+  # Early stopping configuration
+  early_stopping:
+    enabled: true
+    patience: 20        # epochs to wait before stopping
+    metric: nDCG       # metric to monitor: nDCG, UPD, AD, EE, loss
+    mode: max          # max (higher is better) or min (lower is better)
+    min_delta: 0.0      # minimum change to qualify as improvement
+
+# Evaluation
+evaluation:
+  top_k: 10
+  metrics:
+    - nDCG
+    - UPD
+    - AD
+    - EE
+
+# Logging
+logging:
+  log_dir: ./logs
+  checkpoint_dir: ./checkpoints
+  use_tensorboard: true
+  log_interval: 100  # log every N batches
+
+# Hardware
+device: auto  # auto, cpu, cuda
+distributed: false
