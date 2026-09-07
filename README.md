@@ -8,7 +8,7 @@ This repository implements Item Loss Equalization (ILE), an in-processing approa
 
 ### Key Features
 - **BPR Base Model**: Bayesian Personalized Ranking with matrix factorization
-- **ILE Loss**: Three distance functions (STD, ENT, MAD) for loss equalization
+- **group equalise Loss**: Three distance functions (STD, ENT, MAD) for loss equalization
 - **Fairness Metrics**: UPD, AD, EE commonly used in rescys
 - **Datasets**: MovieLens-1M, Goodreads, Google Reviews
 - **Reproducibility**: Full seed control, deterministic execution, checkpointing
@@ -18,7 +18,7 @@ This repository implements Item Loss Equalization (ILE), an in-processing approa
 ```bash
 # Clone repository
 git clone https://github.com/Lomesh2000/recsys-popularity-bias
-cd ile-bpr
+cd recsys
 
 # Create environment
 conda env create -f environment.yml
