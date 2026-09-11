@@ -148,17 +148,4 @@ All experiments use fixed random seeds by default. Set `seed` in config or via C
 python train.py --seed 42 --deterministic
 ```
 
-## Citation
-
-```bibtex
-@inproceedings{prent2024ile,
-  title={Correcting Popularity Bias in Recommender Systems via Item Loss Equalization},
-  author={Prent, Juno and Mansoury, Masoud},
-  booktitle={ACM RecSys 2024 Workshop on Recommender Systems for Sustainability and Social Good},
-  year={2024}
-}
-```
-
-## License
-
 MIT License
